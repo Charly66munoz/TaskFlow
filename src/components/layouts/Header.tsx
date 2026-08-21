@@ -1,6 +1,3 @@
-import { useState } from "react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 // const navigation = [
 //   { name: "Product", href: "#" },
 //   { name: "Features", href: "#" },
@@ -9,8 +6,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 // ];
 
 const Header = ()=>{
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <header className="shadow-xl/10 h-15 flex flex-col justify-center">
       <nav
