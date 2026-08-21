@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AddTaskButton from "../components/dashboard/AddTaskButton";
 import Greeting from "../components/dashboard/Greeting";
 import KanbanBoard from "../components/dashboard/KanbanBoard";
-import type { Task, taskStatus } from "../types/entity/Task";
+import type { Task } from "../types/entity/Task";
 import { mockTasks } from "../mocks/mockTasks";
 
 export const Dashboard = ()=>{
@@ -26,7 +26,7 @@ export const Dashboard = ()=>{
             <Greeting tasks={tasks} tasksStatus={tasksStatus}/>
           </div>
           <div className="flex-1 relative min-h-0">
-            <KanbanBoard tasks={tasks} setTasks={setTasks} taskStatus={tasksStatus} />
+            <KanbanBoard tasks={tasks} taskStatus={tasksStatus} />
             <AddTaskButton addTask={addTask} />
           </div>
         </div>
