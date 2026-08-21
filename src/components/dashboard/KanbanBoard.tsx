@@ -1,21 +1,15 @@
 import KanbanColumn from "./KanbanColumn";
 import type { Task, taskStatus } from "../../types/entity/Task";
-import type { Dispatch } from "react";
-
-interface groupOfTaskStatus{
-toDo?: Task[] | "",
-OnProgress?: Task[]| "",
-finished?: Task[]| "",
-}
 
 interface kanbanBoardProps{
 tasks: Task[],
-setTasks: React.Dispatch<React.SetStateAction<Task[]>>
+// setTask es elimando ya que componente solo debera tener acceso a eliminar y modificar tareas
 taskStatus: taskStatus
 }
 
 
-function KanbanBoard({tasks, setTasks, taskStatus}: kanbanBoardProps) {
+
+function KanbanBoard({tasks, taskStatus}: kanbanBoardProps) {
       return (
         <>
           <div className="hidden md:flex h-full  mr-5 mt-5 text-center  text-slate-300">
