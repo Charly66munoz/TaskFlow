@@ -4,7 +4,7 @@ import { v4 as uuid } from "uuid";
 
 const today = new Date();
 const deadline = new Date("2026-08-05");
-export const tasks: Task[] = [
+export const mockTasks: Task[] = [
     {
         id: uuid(),
         title: "Estudiar",
