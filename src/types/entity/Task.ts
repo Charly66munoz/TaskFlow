@@ -13,3 +13,9 @@ createdAt: Date,
 finishedAt?: Date,
 deadline?: Date,
 }
+
+export interface taskStatus{
+  toDo: Task[],
+  inProgress: Task[],
+  finished: Task[], 
+}
