@@ -20,7 +20,7 @@ The goal is not only to finish the application, but also to practice building so
 
 ### Planned Backend
 
-- FastAPI
+- Next.js
 - SQLAlchemy
 - PostgreSQL
 
