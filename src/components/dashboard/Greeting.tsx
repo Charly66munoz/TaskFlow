@@ -1,6 +1,10 @@
-import { tasks } from "../../mocks/tasks";
+import type { Task } from "../../types/entity/Task";
 
-const Greeting = ()=>{
+interface propsGreting{
+  tasks: Task[]
+}
+
+const Greeting = ({tasks}: propsGreting)=>{
     const toDo = tasks.filter((task) => task.status === "toDo");
     const inProgress = tasks.filter((task) => task.status === "inProgress");
     const finished = tasks.filter((task) => task.status === "finished");
