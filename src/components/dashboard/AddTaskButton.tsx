@@ -11,7 +11,10 @@ const AddTaskButton = ({ addTask }: AddTaskButtonProp) => {
   const [addTaskForm, setAddTaskForm] = useState<boolean>(false);
 
   // Abre el formulario
-  const openForm = () => setAddTaskForm(true);
+  const openForm = () => {
+  
+  setAddTaskForm(true)
+  };
   // Cierra el formualario
   const closeForm = () => setAddTaskForm(false);
 

@@ -39,18 +39,6 @@ function MainLayout(){
             </div>
           </div>
         </div>
-
-        {/* 
-          Otra opcion para desarollar el layout inicial podria ser con basis, en este caso basis define los pixeles iniciales y shrink le dice que no debe achicarse, mientras main puede agrandarce
-        <div className="flex h-screen">
-          <aside className="basis-20 shrink-0 bg-slate-800">
-            <Sidebar />
-          </aside>
-
-          <main className="grow bg-gray-100">
-            <Outlet />
-          </main>
-        </div> */}
       </>
     );
 }

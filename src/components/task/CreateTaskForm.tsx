@@ -128,9 +128,9 @@ const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
               className="rounded-lg bg-purple-400/10 px-3 py-2 text-sm focus:bg-purple-900/80 focus:rounded-2xl  focus:outline-none"
             >
               <option value="">Sin prioridad</option>
-              <option value="low">🟢 Baja</option>
-              <option value="medium">🟡 Media</option>
-              <option value="high">🔴 Alta</option>
+              <option value="low">🟢Baja</option>
+              <option value="medium">🟡Media</option>
+              <option value="high">🔴Alta</option>
             </select>
           </div>
 
