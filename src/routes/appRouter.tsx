@@ -3,7 +3,11 @@ import LandingPage from "../pages/LandingPage";
 import MainLayout from "../components/layouts/MainLayout";
 import { Dashboard } from "../pages/Dashboard";
 
-export const appRouter = createBrowserRouter([
+export const getAppRouter = () => {
+ 
+ if (typeof window === 'undefined') return null
+ 
+ return createBrowserRouter([
     {
         element: <MainLayout />,
         children:[
@@ -20,3 +24,4 @@ export const appRouter = createBrowserRouter([
     }
 
 ])
+}
