@@ -10,31 +10,42 @@ The goal is not only to finish the application, but also to practice building so
 
 ## Tech Stack
 
-### Frontend
+Framework
+- Next.js (App Router)
 
-- React
+Language
 - TypeScript
-- Vite
-- React Router
+
+UI
+- React
 - Tailwind CSS
 
-### Planned Backend
-
-- Next.js
-- SQLAlchemy
+Data
 - PostgreSQL
+- Prisma
 
+Authentication
+- Auth.js
+
+Planned
+- dnd-kit
+- LLM API
+- Vercel
 ---
 
 ## Current Features
 
-- Responsive dashboard
-- Kanban board
-- Task cards
-- Mock data
-- Component-based architecture
-- Routing
-- Dark UI
+✅ Responsive application shell
+✅ Kanban board with three task states
+✅ Task grouping by status
+✅ Task creation with validation
+✅ Responsive sidebar
+✅ TypeScript strict mode
+✅ Domain models for Task and User
+
+## In process
+
+Migration from Vite to Next.js
 
 ---
 
@@ -44,13 +55,21 @@ The project is being developed in phases.
 
 Current progress:
 
-- ✅ Frontend foundation
-- ✅ UI and layout
-- ✅ Domain model and Kanban
-- ⏳ Task management
-- ⏳ Backend integration
-- ⏳ Authentication
-- ⏳ Deployment
+-✅ Frontend foundation
+-✅ UI and layout
+-✅ Domain model and Kanban
+
+After technical desition of migrate to Next.js
+
+-✅ Sprint 0 — Pre-migration cleanup
+-🚧 Sprint 1 — Migration to Next.js
+-⬜ Sprint 2 — PostgreSQL + Prisma
+-⬜ Sprint 3 — Real CRUD
+-⬜ Sprint 4 — Authentication
+-⬜ Sprint 5 — Drag & drop
+-⬜ Sprint 6 — Metrics + AI summary
+-⬜ Sprint 7 — Deployment + polish
+-⬜ Sprint 8 — Documentation
 
 A more detailed roadmap, including sprint planning and technical decisions, is available in the project documentation.
 
@@ -97,3 +116,11 @@ npm run dev
 ## Project Status
 
 TaskFlow is currently under active development and new features are added incrementally as each sprint is completed.
+
+## Current Migration
+
+TaskFlow originally started as a Vite + React Router SPA.
+
+The project is currently being migrated incrementally to Next.js App Router.
+The existing React components and domain model are being preserved where possible,
+while Vite and React Router infrastructure is progressively removed.
