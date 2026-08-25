@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../index.css";
 
 export const metadata: Metadata = {
   title: "frontend",
@@ -15,7 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
       <body>
         <div id="root">{children}</div>
       </body>

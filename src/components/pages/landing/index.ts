@@ -1,0 +1,10 @@
+export { Navbar } from "./Navbar";
+export { Hero } from "./Hero";
+export { ProductPreview } from "./ProductPreview";
+export { About } from "./About";
+export { Features } from "./Features";
+export { ProductivityInsights } from "./ProductivityInsights";
+export { HowItWorks } from "./HowItWorks";
+export { TechStack } from "./TechStack";
+export { CtaSection } from "./CtaSection";
+export { Footer } from "./Footer";
