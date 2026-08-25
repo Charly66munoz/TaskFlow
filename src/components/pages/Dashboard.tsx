@@ -1,9 +1,11 @@
+"use client"
+
 import { useState } from "react";
-import AddTaskButton from "../components/dashboard/AddTaskButton";
-import Greeting from "../components/dashboard/Greeting";
-import KanbanBoard from "../components/dashboard/KanbanBoard";
-import type { Task } from "../types/entity/Task";
-import { mockTasks } from "../mocks/mockTasks";
+import AddTaskButton from "../dashboard/AddTaskButton";
+import Greeting from "../dashboard/Greeting";
+import KanbanBoard from "../dashboard/KanbanBoard";
+import type { Task } from "../../types/entity/Task";
+import { mockTasks } from "../../mocks/mockTasks";
 
 export const Dashboard = ()=>{
     const [tasks, setTasks] = useState<Task[]>(mockTasks)  

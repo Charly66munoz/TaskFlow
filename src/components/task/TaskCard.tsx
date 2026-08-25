@@ -62,16 +62,18 @@ const TaskCard = ({ task }:TaskCardProp) =>{
             <hr className="border-slate-100/10 my-2 w-1/2 md:w-1/3" />
           </div>
           {task.deadline ? (
-            <p className="">Deadline: {task.deadline.toLocaleDateString()}</p>
+            <p className="">
+              Deadline: {task.deadline.toLocaleDateString("es-AR")}
+            </p>
           ) : (
             <p className=" text-slate-500">Agregar fecha limite </p>
           )}
 
           {task.finishedAt && (
-            <p>Terminado el {task.finishedAt.toLocaleDateString()}</p>
+            <p>Terminado el {task.finishedAt.toLocaleDateString("es-AR")}</p>
           )}
           <p className="text-slate-500 text-[11px] text-end">
-            Creada el: {task.createdAt.toLocaleDateString()}
+            Creada el: {task.createdAt.toLocaleDateString("es-AR")}
           </p>
         </div>
       </>

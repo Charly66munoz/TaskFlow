@@ -35,6 +35,11 @@ function toPriority(value: string): Task["priority"] {
       return undefined;
   }
 }
+function parseLocalDate(value: string) {
+  const [year, month, day] = value.split("-").map(Number);
+  return new Date(year, month - 1, day);
+}
+
 
 const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
   const [draft, setDraft] = useState<TaskFormDraft>(initialDraft);
@@ -69,7 +74,7 @@ const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
       ...(trimmedTitle !== "" ? { title: trimmedTitle } : {}),
       ...(priorityValue !== undefined ? { priority: priorityValue } : {}),
       ...(selectedUser !== undefined ? { assigneeTo: selectedUser } : {}),
-      ...(draft.deadline !== "" ? { deadline: new Date(draft.deadline) } : {}),
+      ...(draft.deadline !== "" ? { deadline: parseLocalDate(draft.deadline) } : {}),
     };
 
     addTask(newTask);

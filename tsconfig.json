@@ -1,22 +1,19 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "es2023",
     "lib": [
       "ES2023",
-      "DOM"
+      "DOM",
+      "DOM.Iterable"
     ],
     "module": "ESNext",
     "esModuleInterop": true,
-    "allowArbitraryExtensions": true,
     "skipLibCheck": true,
     "strict": true, /* Enables all strict type-checking options */
     "exactOptionalPropertyTypes": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -25,8 +22,8 @@
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
     "plugins": [
       {
         "name": "next"
@@ -39,8 +36,6 @@
     "**/*.ts",
     "**/*.tsx", //Le indican a TypeScript que debe revisar absolutamente todos los archivos de código (.ts y .tsx)
     ".next/types/**/*.ts",
-    "dist/types/**/*.ts",
-    "dist/dev/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ], //Permite que TypeScript reconozca los tipos avanzados que Next.js genera en tiempo de desarrollo
   "exclude": [
