@@ -26,5 +26,10 @@ dist-ssr
 next-env.d.ts
 dist
 
+# env files
+.env
+.env*.local
+
 # claude
 CLAUDE.md
+/src/generated/prisma
