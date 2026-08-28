@@ -1,0 +1,88 @@
+datasource db {
+  provider = "postgresql"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+enum Role {
+  owner
+  member
+}
+
+enum Priority {
+  low
+  medium
+  high
+}
+
+enum Status {
+  toDo
+  inProgress
+  finished
+}
+
+enum TaskEventType {
+  CREATED
+  STATUS_CHANGED
+  ASSIGNEE_CHANGED
+}
+
+model User {
+  userId String @id @default(uuid()) @map("user_id") @db.Uuid
+  name   String
+  email  String @unique @db.VarChar(255)
+  role   Role   @default(member)
+
+  assignedTasks          Task[]
+  actedTaskEvents        TaskEvent[] @relation("TaskEventActor") //los nombres deben coincidir ya que hay tres relaciones distintas entre estas dos entidades.
+  fromAssigneeTaskEvents TaskEvent[] @relation("TaskEventFromAssignee")
+  toAssigneeTaskEvents   TaskEvent[] @relation("TaskEventToAssignee")
+}
+
+model Task {
+  taskId      String  @id @default(uuid()) @map("task_id") @db.Uuid
+  title       String?
+  description String
+
+  assigneeId String? @map("assignee_id") @db.Uuid
+  assignee   User?   @relation(fields: [assigneeId], references: [userId])
+
+  status   Status    @default(toDo)
+  priority Priority?
+
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamptz(3)
+  deadline  DateTime? @db.Timestamptz(3)
+
+  taskEventList TaskEvent[]
+  // Business rule: when creating/updating a task,
+  // deadline cannot be set to a past date.
+  // Validate in UI and server-side logic.
+}
+
+model TaskEvent {
+  taskEventId String @id @default(uuid()) @map("task_event_id") @db.Uuid
+
+  taskId String @map("task_id") @db.Uuid
+  task   Task   @relation(fields: [taskId], references: [taskId], onDelete: Cascade)
+
+  actorId String? @map("actor_id") @db.Uuid
+  actor   User?   @relation("TaskEventActor", fields: [actorId], references: [userId], onDelete: SetNull)
+
+  fromAssigneeId String? @map("from_assignee_id") @db.Uuid
+  fromAssignee   User?   @relation("TaskEventFromAssignee", fields: [fromAssigneeId], references: [userId], onDelete: SetNull)
+
+  toAssigneeId String? @map("to_assignee_id") @db.Uuid
+  toAssignee   User?   @relation("TaskEventToAssignee", fields: [toAssigneeId], references: [userId], onDelete: SetNull)
+
+  type TaskEventType
+
+  fromStatus Status?
+  toStatus   Status?
+
+  occurredAt DateTime @default(now())
+
+  @@index([taskId, occurredAt])
+}
