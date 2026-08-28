@@ -82,7 +82,7 @@ model TaskEvent {
   fromStatus Status?
   toStatus   Status?
 
-  occurredAt DateTime @default(now())
+  occurredAt DateTime @default(now()) @db.Timestamptz(3)
 
   @@index([taskId, occurredAt])
 }
