@@ -1,7 +1,8 @@
 
 export interface User{
+    id: string
     name: string,
     email: string,
-    id: string
+    role: "owner" | "member";
 }
 // el id representa un campo UUID
