@@ -9,7 +9,5 @@ export default async function Page() {
   let tasks : Task[] = await getTasks();
   let users : User[] = await getUsers();
 
-    console.log("TASKS FROM DB:", tasks);
-
   return <Dashboard dbTasks={tasks} dbUsers={users}/>;
 }

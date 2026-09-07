@@ -1,12 +1,15 @@
+
 import { useState } from "react";
 import type { ChangeEvent, SubmitEvent } from "react";
-import { v4 as uuid } from "uuid";
 import type { Task } from "../../types/entity/Task";
-import { users } from "../../mocks/users";
+import type { User } from "../../types/entity/User";
+import type { TaskInput } from "../../types/entity/TaskInput";
+import { createTaskAction } from "../../server/actions/taskAction";
 
 interface CreateTaskFormProp {
   addTask: (newTask: Task) => void;
   onClose: () => void;
+  dbUsers: User[]
 }
 
 interface TaskFormDraft {
@@ -40,21 +43,20 @@ function parseLocalDate(value: string) {
   return new Date(year, month - 1, day);
 }
 
-
-const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
+const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
   const [draft, setDraft] = useState<TaskFormDraft>(initialDraft);
   const [submitAttempted, setSubmitAttempted] = useState(false);
 
   const isDescriptionEmpty = draft.description.trim() === "";
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
     setDraft((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async(e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (isDescriptionEmpty) {
@@ -64,18 +66,17 @@ const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
 
     const trimmedTitle = draft.title.trim();
     const priorityValue = toPriority(draft.priority);
-    const selectedUser = users.find((user) => user.id === draft.assigneeToId);
 
-    const newTask: Task = {
-      id: uuid(),
+
+    const newTaskMapped: TaskInput = {
       description: draft.description.trim(),
-      status: "toDo",
-      createdAt: new Date(),
-      ...(trimmedTitle !== "" ? { title: trimmedTitle } : {}),
-      ...(priorityValue !== undefined ? { priority: priorityValue } : {}),
-      ...(selectedUser !== undefined ? { assigneeTo: selectedUser } : {}),
-      ...(draft.deadline !== "" ? { deadline: parseLocalDate(draft.deadline) } : {}),
+      ...(trimmedTitle !== "" && { title: trimmedTitle }),
+      ...(priorityValue && { priority: priorityValue }),
+      ...(draft.assigneeToId && { assigneeId: draft.assigneeToId }),
+      ...(draft.deadline && { deadline: parseLocalDate(draft.deadline) }),
     };
+
+    const newTask = await createTaskAction(newTaskMapped)
 
     addTask(newTask);
     onClose();
@@ -149,7 +150,7 @@ const CreateTaskForm = ({ addTask, onClose }: CreateTaskFormProp) => {
               className="rounded-lg bg-purple-400/10 px-3 py-2 text-sm focus:bg-purple-900/80 focus:rounded-2xl  focus:outline-none"
             >
               <option value="">Sin asignar</option>
-              {users.map((user) => (
+              {dbUsers.map((user) => (
                 <option key={user.id} value={user.id}>
                   {user.name}
                 </option>
