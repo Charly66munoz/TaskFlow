@@ -4,13 +4,14 @@ import type { ChangeEvent, SubmitEvent } from "react";
 import type { Task } from "../../types/entity/Task";
 import type { User } from "../../types/entity/User";
 import type { TaskInput } from "../../types/entity/TaskInput";
-import { createTaskAction } from "../../server/actions/taskAction";
+import {  editTaskAction } from "../../server/actions/taskAction";
 import LoadingSpinner from "../ui/LoadingSpinner";
 
 interface CreateTaskFormProp {
-  addTask: (newTask: Task) => void;
+  task: Task;
+  dbUsers: User[];
   onClose: () => void;
-  dbUsers: User[]
+  editTask: (id: string, task: Task) => void;
 }
 
 interface TaskFormDraft {
@@ -18,16 +19,8 @@ interface TaskFormDraft {
   description: string;
   priority: string;
   assigneeToId: string;
-  deadline: string;
+  deadline?: string;
 }
-
-const initialDraft: TaskFormDraft = {
-  title: "",
-  description: "",
-  priority: "",
-  assigneeToId: "",
-  deadline: "",
-};
 
 function toPriority(value: string): Task["priority"] {
   switch (value) {
@@ -44,8 +37,27 @@ function parseLocalDate(value: string) {
   return new Date(year, month - 1, day);
 }
 
-const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
-  const [draft, setDraft] = useState<TaskFormDraft>(initialDraft);
+function formatDateForInput(date?: Date): string {
+  // Si no existe deadline, dejamos el input vacío
+  if (!date) return "";
+
+  // input type="date" necesita: YYYY-MM-DD
+  return date.toISOString().split("T")[0];
+}
+
+const EditTaskForm = ({
+  task,
+  dbUsers,
+  editTask,
+  onClose,
+}: CreateTaskFormProp) => {
+  const [draft, setDraft] = useState<TaskFormDraft>({
+    title: task.title ?? "",
+    description: task.description,
+    priority: task.priority ?? "",
+    assigneeToId : task.assigneeTo?.id ?? "",
+    deadline: formatDateForInput(task.deadline),
+  });
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -57,9 +69,10 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
   ) => {
     const { name, value } = e.target;
     setDraft((prev) => ({ ...prev, [name]: value }));
+
   };
 
-  const handleSubmit = async(e: SubmitEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (isDescriptionEmpty) {
@@ -74,12 +87,11 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
     const trimmedTitle = draft.title.trim();
     const priorityValue = toPriority(draft.priority);
 
-
     const newTaskMapped: TaskInput = {
       description: draft.description.trim(),
       ...(trimmedTitle !== "" && { title: trimmedTitle }),
       ...(priorityValue && { priority: priorityValue }),
-      ...(draft.assigneeToId && { assigneeId: draft.assigneeToId }),
+      assigneeId: draft.assigneeToId || null,
       ...(draft.deadline && { deadline: parseLocalDate(draft.deadline) }),
     };
 
@@ -87,11 +99,12 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
     setSubmitError(null);
 
     try {
-      const newTask = await createTaskAction(newTaskMapped);
-      addTask(newTask);
+      
+      const newTask = await editTaskAction(task.id , newTaskMapped);
+      editTask(task.id, newTask);
       onClose();
     } catch {
-      setSubmitError("No se pudo crear la tarea. Intentá de nuevo.");
+      setSubmitError("No se pudo editar la tarea. Intentá de nuevo.");
     } finally {
       setIsSubmitting(false);
     }
@@ -102,11 +115,11 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
       className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
-      aria-labelledby="create-task-heading"
+      aria-labelledby="edit-task-heading"
     >
       <div className="bg-slate-900 rounded-xl p-6 w-full max-w-md text-slate-200">
-        <h2 id="create-task-heading" className="text-lg font-bold mb-4">
-          Nueva tarea
+        <h2 id="edit-task-heading" className="text-lg font-bold mb-4">
+          Editar tarea
         </h2>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -186,7 +199,11 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
           </div>
 
           {submitError && (
-            <p className="text-red-400 text-xs" role="alert" aria-live="assertive">
+            <p
+              className="text-red-400 text-xs"
+              role="alert"
+              aria-live="assertive"
+            >
               {submitError}
             </p>
           )}
@@ -205,8 +222,10 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
               disabled={isSubmitting}
               className="px-4 py-2 rounded-full text-sm font-bold bg-purple-900 text-white hover:bg-purple-950 disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-2"
             >
-              {isSubmitting && <LoadingSpinner size="sm" label="Creando tarea" />}
-              {isSubmitting ? "Creando..." : "Crear tarea"}
+              {isSubmitting && (
+                <LoadingSpinner size="sm" label="Creando tarea" />
+              )}
+              {isSubmitting ? "Editando..." : "Editar tarea"}
             </button>
           </div>
         </form>
@@ -215,4 +234,4 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
   );
 };
 
-export default CreateTaskForm;
+export default EditTaskForm;
