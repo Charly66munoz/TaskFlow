@@ -33,3 +33,8 @@ dist
 # claude
 CLAUDE.md
 
+# Graphify - Archivos temporales y de costos locales
+.graphify/
+graphify-out/cost.json
+graphify-out/query.log
+
