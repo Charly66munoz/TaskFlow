@@ -54,10 +54,10 @@
     "semantic_hash": "9b9fc15dc168a229c8bab11815af833a"
   },
   "src/app/(app)/(dashboard)/page.tsx": {
-    "mtime": 1789416720.26965,
-    "seen": 1789417414.567421,
-    "ast_hash": "0230eec56d206e69d0460bcbe5f54189",
-    "semantic_hash": ""
+    "mtime": 1788644264.0957792,
+    "seen": 1789411309.73232,
+    "ast_hash": "aae0f096891fa8e8b1663a52486cc2ce",
+    "semantic_hash": "aae0f096891fa8e8b1663a52486cc2ce"
   },
   "src/app/(app)/(landingPage)/landingPage/page.tsx": {
     "mtime": 1787865242.491045,
@@ -288,22 +288,34 @@
     "semantic_hash": "01e4aeeb2ed2534c332134d995a81095"
   },
   "src/mocks/mockTasks.ts": {
-    "mtime": 1789413112.020101,
-    "seen": 1789417414.567515,
+    "mtime": 1788300167.2575388,
+    "seen": 1789411309.7323763,
     "ast_hash": "57c2e962fc9b676c756c548a55ab55b2",
     "semantic_hash": "57c2e962fc9b676c756c548a55ab55b2"
   },
   "src/mocks/mockUsers.ts": {
-    "mtime": 1789413324.3041387,
-    "seen": 1789417414.567517,
-    "ast_hash": "0dfbb798f53ecfed3a3d024672014d65",
-    "semantic_hash": ""
+    "mtime": 1788290535.878401,
+    "seen": 1789411309.732378,
+    "ast_hash": "81bf719749e544050af0f33959dc5352",
+    "semantic_hash": "81bf719749e544050af0f33959dc5352"
   },
   "src/server/actions/taskAction.ts": {
-    "mtime": 1789416787.6125066,
-    "seen": 1789417414.5675192,
-    "ast_hash": "9fee11e89887b35d5a7ec3a37aa283ca",
-    "semantic_hash": ""
+    "mtime": 1788885795.8341415,
+    "seen": 1789411309.7323794,
+    "ast_hash": "7c4d13a6bf5a69ed4abd6496b673d1b1",
+    "semantic_hash": "7c4d13a6bf5a69ed4abd6496b673d1b1"
+  },
+  "src/service/taskService/taskService.ts": {
+    "mtime": 1788899597.6575642,
+    "seen": 1789411309.7323806,
+    "ast_hash": "043efd7e621b7b333c9bdfdb0138ccf9",
+    "semantic_hash": "043efd7e621b7b333c9bdfdb0138ccf9"
+  },
+  "src/service/userService/userService.ts": {
+    "mtime": 1788636065.0017006,
+    "seen": 1789411309.7323823,
+    "ast_hash": "e706019c27d339861781d03f6a0bcdd4",
+    "semantic_hash": "e706019c27d339861781d03f6a0bcdd4"
   },
   "src/types/entity/Task.ts": {
     "mtime": 1787584913.673687,
@@ -382,23 +394,5 @@
     "seen": 1789411309.7324007,
     "ast_hash": "ad9656cfde2f716e6c429f5bbd12cc38",
     "semantic_hash": "ad9656cfde2f716e6c429f5bbd12cc38"
-  },
-  "src/service/mapper/taskMapper.ts": {
-    "mtime": 1789414470.8875368,
-    "seen": 1789417414.5675223,
-    "ast_hash": "ce9fbc9f9dcfbf9fbc7b962a38911d7f",
-    "semantic_hash": ""
-  },
-  "src/service/taskService.ts": {
-    "mtime": 1789417083.219979,
-    "seen": 1789417414.5675251,
-    "ast_hash": "a690b15ae3459b88255714795ac19641",
-    "semantic_hash": ""
-  },
-  "src/service/userService.ts": {
-    "mtime": 1789413797.4397926,
-    "seen": 1789417414.5675268,
-    "ast_hash": "de70afd67af2aa0bbf3bfb709986f4c6",
-    "semantic_hash": ""
   }
 }

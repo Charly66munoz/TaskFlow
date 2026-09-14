@@ -35,17 +35,33 @@ Planned
 
 ## Current Features
 
-✅ Responsive application shell
-✅ Kanban board with three task states
+✅ Responsive application shell, running on Next.js App Router
+✅ Kanban board with three task states (`toDo`, `inProgress`, `finished`)
 ✅ Task grouping by status
-✅ Task creation with validation
-✅ Responsive sidebar
+✅ Tasks and users persisted in PostgreSQL (Neon) through Prisma
+✅ Task creation, editing, and deletion, wired end to end (UI → Server Action → service → database)
+✅ Every task creation and every status/assignee change is recorded as a `TaskEvent`, so each task keeps a history
 ✅ TypeScript strict mode
-✅ Domain models for Task and User
+✅ Domain models for Task and User, kept separate from the Prisma/database models
 
 ## In process
 
-Migration from Vite to Next.js
+Sprint 3 — closing the remaining gaps in the real-CRUD flow (see project documentation for details) before starting authentication.
+
+---
+
+## Architecture (high level)
+
+- **UI components** (`src/components/`) render the board and the create/edit/delete forms. Only one component (`Dashboard`) is a Client Component — everything interactive under it inherits that boundary. Everything else is a Server Component by default.
+- **Server Actions** (`src/server/actions/`) are the entry point from client forms into the backend.
+- **Services** (`src/service/`) hold the Prisma queries and translate database rows into the UI-facing `Task`/`User` types.
+- **Prisma** (`prisma/schema.prisma`, `src/db/client.ts`) defines the database schema and connects to PostgreSQL on Neon.
+
+## Database Models (high level)
+
+- **User** — id, name, email, role.
+- **Task** — id, title, description, assignee, status, priority, timestamps.
+- **TaskEvent** — a history record for a task: what changed (task created, status changed, or assignee changed), the previous and new value, and when it happened. This is what powers the task history and will later power the productivity metrics and AI summary.
 
 ---
 
@@ -62,9 +78,9 @@ Current progress:
 After technical desition of migrate to Next.js
 
 -✅ Sprint 0 — Pre-migration cleanup
--🚧 Sprint 1 — Migration to Next.js
--⬜ Sprint 2 — PostgreSQL + Prisma
--⬜ Sprint 3 — Real CRUD
+-✅ Sprint 1 — Migration to Next.js
+-✅ Sprint 2 — PostgreSQL + Prisma
+-🚧 Sprint 3 — Real CRUD (mostly implemented, being reviewed/closed out)
 -⬜ Sprint 4 — Authentication
 -⬜ Sprint 5 — Drag & drop
 -⬜ Sprint 6 — Metrics + AI summary
@@ -117,10 +133,6 @@ npm run dev
 
 TaskFlow is currently under active development and new features are added incrementally as each sprint is completed.
 
-## Current Migration
+## History
 
-TaskFlow originally started as a Vite + React Router SPA.
-
-The project is currently being migrated incrementally to Next.js App Router.
-The existing React components and domain model are being preserved where possible,
-while Vite and React Router infrastructure is progressively removed.
+TaskFlow originally started as a Vite + React Router SPA. It has since been fully migrated to Next.js App Router, and now persists its data in PostgreSQL through Prisma instead of in-memory mock data.
