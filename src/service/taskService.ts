@@ -1,7 +1,7 @@
-import { prisma } from "../../db/client"
-import type { Prisma } from "../../generated/prisma/client"
-import type { Task } from "../../types/entity/Task"
-import type { TaskInput } from "../../types/entity/TaskInput"
+import { prisma } from "../db/client"
+import type { Prisma } from "../generated/prisma/client"
+import type { TaskInput } from "../types/entity/TaskInput"
+import { mapTaskToUI } from "./mapper/taskMapper"
 
 export const getTasks = async () => {
     const tasksDb = await prisma.task.findMany({
@@ -13,46 +13,12 @@ export const getTasks = async () => {
                 }
             }
         },
+        orderBy: {
+            createdAt: "asc"
+    }
     })
         
-    const tasks = tasksDb.map((t)=>{
-        
-        const finishedEvent = t.taskEventList.find(
-            (event) => 
-            event.toStatus === "finished"
-        );
-
-        const mappedTask: Task = {
-            id: t.taskId,
-            title: t.title ? t.title : "",
-            description: t.description,
-            ...(t.assignee && {
-                assigneeTo: {
-                    id: t.assignee.userId,
-                    name: t.assignee.name,
-                    email: t.assignee.email,
-                    role: t.assignee.role
-                }
-            }),
-            ...(t.priority && {
-                priority: t.priority
-            }),
-            status: t.status,
-            createdAt: t.createdAt,
-            ...(t.deadline && {
-                deadline: t.deadline
-            }),
-            ...(finishedEvent && {
-                finishedAt: finishedEvent.occurredAt
-            }),
-            
-            // El atributo finishedEvent esta en revision, ya que de momento no se cuenta con datos 100% y la trayectorias de una tarea seria completamente falsa
-        }
-
-        return mappedTask
-    })
-
-    return tasks
+    return tasksDb.map((t)=> mapTaskToUI(t))
 }
 
 export const createTask = async (taskInput: TaskInput) => {
@@ -84,41 +50,10 @@ export const createTask = async (taskInput: TaskInput) => {
             },
         },
     });
-
-    const finishedEvent = createdTaskDb.taskEventList.find(
-        (event) => 
-        event.toStatus === "finished"
-    );
-    
-    const newTask : Task = {
-        id: createdTaskDb.taskId,
-            title: createdTaskDb.title ? createdTaskDb.title : "",
-            description: createdTaskDb.description,
-            ...(createdTaskDb.assignee && {
-                assigneeTo: {
-                    id: createdTaskDb.assignee.userId,
-                    name: createdTaskDb.assignee.name,
-                    email: createdTaskDb.assignee.email,
-                    role: createdTaskDb.assignee.role
-                }
-            }),
-            ...(createdTaskDb.priority && {
-                priority: createdTaskDb.priority
-            }),
-            status: createdTaskDb.status,
-            createdAt: createdTaskDb.createdAt,
-            ...(createdTaskDb.deadline && {
-                deadline: createdTaskDb.deadline
-            }),
-            ...(finishedEvent && {
-                finishedAt: finishedEvent.occurredAt
-            }),
-    }
-
-    return newTask;
+    return mapTaskToUI(createdTaskDb)
 };
 export const editTask = async (id: string, taskInput: TaskInput) => {
-
+    
     const editTaskDb = await prisma.$transaction(async (tx) => {
         const previousTask = await tx.task.findUniqueOrThrow({
             where: { taskId: id },
@@ -132,6 +67,8 @@ export const editTask = async (id: string, taskInput: TaskInput) => {
             : previousTask.assigneeId;
         const newStatus = taskInput.status ?? previousTask.status;
 
+        // Solo aceptar objetos que Prisma pueda usar
+        // para crear TaskEvents.
         const events: Prisma.TaskEventUncheckedCreateWithoutTaskInput[] = [];
 
         if (newAssigneeId !== previousTask.assigneeId) {
@@ -188,37 +125,7 @@ export const editTask = async (id: string, taskInput: TaskInput) => {
         });
     });
 
-    const finishedEvent = editTaskDb.taskEventList.find(
-        (event) => 
-        event.toStatus === "finished"
-    );
-    
-    const editedTask : Task = {
-        id: editTaskDb.taskId,
-            title: editTaskDb.title ? editTaskDb.title : "",
-            description: editTaskDb.description,
-            ...(editTaskDb.assignee && {
-                assigneeTo: {
-                    id: editTaskDb.assignee.userId,
-                    name: editTaskDb.assignee.name,
-                    email: editTaskDb.assignee.email,
-                    role: editTaskDb.assignee.role
-                }
-            }),
-            ...(editTaskDb.priority && {
-                priority: editTaskDb.priority
-            }),
-            status: editTaskDb.status,
-            createdAt: editTaskDb.createdAt,
-            ...(editTaskDb.deadline && {
-                deadline: editTaskDb.deadline
-            }),
-            ...(finishedEvent && {
-                finishedAt: finishedEvent.occurredAt
-            }),
-    }
-
-    return editedTask;
+    return mapTaskToUI(editTaskDb)
 };
 
 export const deleteTask = async (id: string) => {

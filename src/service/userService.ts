@@ -1,5 +1,5 @@
-import { prisma } from "../../db/client"
-import type { User } from "../../types/entity/User"
+import { prisma } from "../db/client"
+import type { User } from "../types/entity/User"
 
 export const getUsers = async () => {
     const userDb = await prisma.user.findMany()

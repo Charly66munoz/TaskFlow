@@ -1,6 +1,6 @@
 import { Dashboard } from "../../../components/pages/Dashboard";
-import { getTasks } from "../../../service/taskService/taskService";
-import { getUsers } from "../../../service/userService/userService";
+import { getTasks } from "../../../service/taskService";
+import { getUsers } from "../../../service/userService";
 import type { Task } from "../../../types/entity/Task";
 import type { User } from "../../../types/entity/User";
 
