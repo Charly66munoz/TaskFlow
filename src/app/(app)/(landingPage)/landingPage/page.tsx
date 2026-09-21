@@ -8,7 +8,7 @@ import {
   Navbar,
   ProductivityInsights,
   TechStack,
-} from "../../../../components/pages/landing";
+} from "@/components/pages/landing";
 
 export default function HomePage() {
   return (

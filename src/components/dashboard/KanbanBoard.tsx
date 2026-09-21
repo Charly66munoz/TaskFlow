@@ -1,6 +1,6 @@
 import KanbanColumn from "./KanbanColumn";
-import type { Task, taskStatus } from "../../types/entity/Task";
-import type { User } from "../../types/entity/User";
+import type { Task, taskStatus } from "@/types/entity/Task";
+import type { User } from "@/types/entity/User";
 
 interface kanbanBoardProps {
   tasks: Task[];

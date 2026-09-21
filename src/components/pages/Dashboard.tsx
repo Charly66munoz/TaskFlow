@@ -4,8 +4,8 @@ import { useState } from "react";
 import AddTaskButton from "../dashboard/AddTaskButton";
 import Greeting from "../dashboard/Greeting";
 import KanbanBoard from "../dashboard/KanbanBoard";
-import type { Task } from "../../types/entity/Task";
-import type { User } from "../../types/entity/User";
+import type { Task } from "@/types/entity/Task";
+import type { User } from "@/types/entity/User";
 
 interface propDashboard{
   dbTasks: Task[];

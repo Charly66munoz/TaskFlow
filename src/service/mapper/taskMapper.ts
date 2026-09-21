@@ -1,5 +1,5 @@
-import type { Prisma } from "../../generated/prisma/client";
-import type { Task } from "../../types/entity/Task";
+import type { Prisma } from "@/generated/prisma/client";
+import type { Task } from "@/types/entity/Task";
 
 type TaskWithRelations = Prisma.TaskGetPayload<{
   include: {

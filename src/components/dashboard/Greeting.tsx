@@ -1,4 +1,4 @@
-import type { Task, taskStatus } from "../../types/entity/Task";
+import type { Task, taskStatus } from "@/types/entity/Task";
 
 interface propsGreting{
   tasks: Task[]

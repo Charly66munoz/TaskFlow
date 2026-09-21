@@ -1,10 +1,10 @@
 
 import { useState } from "react";
 import type { ChangeEvent, SubmitEvent } from "react";
-import type { Task } from "../../types/entity/Task";
-import type { User } from "../../types/entity/User";
-import type { TaskInput } from "../../types/entity/TaskInput";
-import { createTaskAction } from "../../server/actions/taskAction";
+import type { Task } from "@/types/entity/Task";
+import type { User } from "@/types/entity/User";
+import type { TaskInput } from "@/types/entity/TaskInput";
+import { createTaskAction } from "@/server/actions/taskAction";
 import LoadingSpinner from "../ui/LoadingSpinner";
 
 interface CreateTaskFormProp {

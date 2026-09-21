@@ -1,8 +1,8 @@
-import type { Task } from "../../types/entity/Task";
+import type { Task } from "@/types/entity/Task";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 import { useState } from "react";
-import type { User } from "../../types/entity/User";
+import type { User } from "@/types/entity/User";
 import EditTaskForm from "./EditTaskForm";
 import DeleteTaskForm from "./DeleteTaskForm";
 

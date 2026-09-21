@@ -1,8 +1,8 @@
 
 import { useState } from "react";
-import type { Task } from "../../types/entity/Task";
+import type { Task } from "@/types/entity/Task";
 import LoadingSpinner from "../ui/LoadingSpinner";
-import { deleteTaskAction } from "../../server/actions/taskAction";
+import { deleteTaskAction } from "@/server/actions/taskAction";
 
 interface CreateTaskFormProp {
   task: Task;

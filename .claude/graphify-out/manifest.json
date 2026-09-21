@@ -1,0 +1,260 @@
+{
+  "eslint.config.js": {
+    "mtime": 1787865242.483362,
+    "seen": 1789697976.4253423,
+    "ast_hash": "69a0532bea67521de31d32d7a95a8905",
+    "semantic_hash": ""
+  },
+  "next.config.mjs": {
+    "mtime": 1787865242.483362,
+    "seen": 1789697976.4253504,
+    "ast_hash": "7fb916be5477daadafc6b27c02a66b7e",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1789697972.5619874,
+    "seen": 1789697976.4253542,
+    "ast_hash": "7e55c4c9f263adec3338aed610de650e",
+    "semantic_hash": ""
+  },
+  "postcss.config.mjs": {
+    "mtime": 1787865242.4881055,
+    "seen": 1789697976.4253564,
+    "ast_hash": "35d0b264e19e80614a58b6580c238ee9",
+    "semantic_hash": ""
+  },
+  "src/app/(app)/(dashboard)/layout.tsx": {
+    "mtime": 1787865242.4890223,
+    "seen": 1789697976.4253583,
+    "ast_hash": "9b9fc15dc168a229c8bab11815af833a",
+    "semantic_hash": ""
+  },
+  "src/app/(app)/(dashboard)/page.tsx": {
+    "mtime": 1789697972.5624998,
+    "seen": 1789697976.42536,
+    "ast_hash": "c5e12f3321d99d6ea68a55b548f709d1",
+    "semantic_hash": ""
+  },
+  "src/app/(app)/(landingPage)/landingPage/page.tsx": {
+    "mtime": 1787865242.491045,
+    "seen": 1789697976.4253619,
+    "ast_hash": "196ba7766625b9a3213b7b84f4f95c9d",
+    "semantic_hash": ""
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1787865242.491045,
+    "seen": 1789697976.4253638,
+    "ast_hash": "f637c6b20e8b290cac32387d9671f8cf",
+    "semantic_hash": ""
+  },
+  "src/components/dashboard/AddTaskButton.tsx": {
+    "mtime": 1789697972.5635097,
+    "seen": 1789697976.425365,
+    "ast_hash": "26910cd23dd2e95437396e1fffa230ac",
+    "semantic_hash": ""
+  },
+  "src/components/dashboard/Greeting.tsx": {
+    "mtime": 1787600842.0450258,
+    "seen": 1789697976.4253666,
+    "ast_hash": "009bbfa165eb4ceefb9b18810080c1b7",
+    "semantic_hash": ""
+  },
+  "src/components/dashboard/KanbanBoard.tsx": {
+    "mtime": 1789697972.5645087,
+    "seen": 1789697976.4253678,
+    "ast_hash": "0e8c10aea3b01af0cc4c79479dedddf5",
+    "semantic_hash": ""
+  },
+  "src/components/dashboard/KanbanColumn.tsx": {
+    "mtime": 1789697972.5655122,
+    "seen": 1789697976.4253697,
+    "ast_hash": "1f4e60e5b5c9ae02f1d6e752754f4995",
+    "semantic_hash": ""
+  },
+  "src/components/layouts/Header.tsx": {
+    "mtime": 1787680512.8191564,
+    "seen": 1789697976.4253714,
+    "ast_hash": "32eb3ea4e18bd89d744ad903f1c97267",
+    "semantic_hash": ""
+  },
+  "src/components/layouts/Sidebar.tsx": {
+    "mtime": 1787865242.4920423,
+    "seen": 1789697976.4253726,
+    "ast_hash": "bb98d1f284cfaee107dea80d438255c6",
+    "semantic_hash": ""
+  },
+  "src/components/pages/Dashboard.tsx": {
+    "mtime": 1789697972.5665095,
+    "seen": 1789697976.4253745,
+    "ast_hash": "3fcc25d3d670eaa753ec159593ab56b4",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/About.tsx": {
+    "mtime": 1787865242.4940429,
+    "seen": 1789697976.425376,
+    "ast_hash": "ae87e710ea0ce44f1b083aa694da9fab",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/CtaSection.tsx": {
+    "mtime": 1787865242.4950466,
+    "seen": 1789697976.4253776,
+    "ast_hash": "98322116132cd1fa92661004d08fc8fc",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/Features.tsx": {
+    "mtime": 1787865242.4960432,
+    "seen": 1789697976.425379,
+    "ast_hash": "3f7ed22108d1e8fc212d7d5f8dc26388",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/Footer.tsx": {
+    "mtime": 1787865242.4960432,
+    "seen": 1789697976.4253807,
+    "ast_hash": "40e22f6156e4a4b4e3ef276f43930dff",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/Hero.tsx": {
+    "mtime": 1787865242.4960432,
+    "seen": 1789697976.425382,
+    "ast_hash": "507dc7ca5972566dadb26fc60131e9ca",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/HowItWorks.tsx": {
+    "mtime": 1787865242.4975498,
+    "seen": 1789697976.4253833,
+    "ast_hash": "567c2a006eb5111afca52296add6d6ce",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/Navbar.tsx": {
+    "mtime": 1787865242.498557,
+    "seen": 1789697976.4253848,
+    "ast_hash": "d2adac2cc311fa235b6f67692385f0fa",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/ProductPreview.tsx": {
+    "mtime": 1787865242.498557,
+    "seen": 1789697976.425387,
+    "ast_hash": "d7773e526ebbed5f732835b0677756dd",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/ProductivityInsights.tsx": {
+    "mtime": 1787865242.4996173,
+    "seen": 1789697976.4253883,
+    "ast_hash": "dffe5b6f8a85611da2931e28ece54fd6",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/SectionTitle.tsx": {
+    "mtime": 1787865242.4996173,
+    "seen": 1789697976.4253898,
+    "ast_hash": "ab2c1709c78e5da7126e7816d0dc8338",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/TechStack.tsx": {
+    "mtime": 1787865242.5006156,
+    "seen": 1789697976.4253912,
+    "ast_hash": "75cbe4a57c08b9ad6bfeaada771f88d5",
+    "semantic_hash": ""
+  },
+  "src/components/pages/landing/index.ts": {
+    "mtime": 1787865242.5006156,
+    "seen": 1789697976.4253926,
+    "ast_hash": "0188717e7806807c477f2d6d51b8bc07",
+    "semantic_hash": ""
+  },
+  "src/components/task/CreateTaskForm.tsx": {
+    "mtime": 1789697972.5675104,
+    "seen": 1789697976.4253938,
+    "ast_hash": "f7674a26e88f60c61219aa0c67be6a10",
+    "semantic_hash": ""
+  },
+  "src/components/task/TaskCard.tsx": {
+    "mtime": 1789697972.568512,
+    "seen": 1789697976.4253955,
+    "ast_hash": "938d66c9cca0d93c7dbebf0cada3f79b",
+    "semantic_hash": ""
+  },
+  "src/mocks/mockTasks.ts": {
+    "mtime": 1789697972.5695097,
+    "seen": 1789697976.4253967,
+    "ast_hash": "c53f823091d4154d719f05b909417b6f",
+    "semantic_hash": ""
+  },
+  "src/mocks/users.ts": {
+    "mtime": 1789697972.5695097,
+    "seen": 1789697976.4253983,
+    "ast_hash": "81bf719749e544050af0f33959dc5352",
+    "semantic_hash": ""
+  },
+  "src/types/entity/Task.ts": {
+    "mtime": 1787584913.673687,
+    "seen": 1789697976.4253995,
+    "ast_hash": "50dde27ac56d9369863c77cfadb65763",
+    "semantic_hash": ""
+  },
+  "src/types/entity/User.ts": {
+    "mtime": 1789697972.5705097,
+    "seen": 1789697976.425401,
+    "ast_hash": "ea2f81dc6c18971551674be82efbc57a",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1787865242.5036116,
+    "seen": 1789697976.4254024,
+    "ast_hash": "879ee2c708f011d03578355b6d6274f1",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789697972.5574713,
+    "seen": 1789697976.425404,
+    "ast_hash": "7a3fc2df79326da636ac62742b169462",
+    "semantic_hash": ""
+  },
+  "docs/colors.md": {
+    "mtime": 1785340157.2557316,
+    "seen": 1789697976.425406,
+    "ast_hash": "d10fa5a8d27be1b64ac0eb507ba4f31f",
+    "semantic_hash": ""
+  },
+  "docs/decisiones_tecnicas.md": {
+    "mtime": 1785340157.2569382,
+    "seen": 1789697976.4254072,
+    "ast_hash": "7691bf9f1909359d0388bedb7d64aab6",
+    "semantic_hash": ""
+  },
+  "docs/estructura_carpetas.md": {
+    "mtime": 1785340157.2569382,
+    "seen": 1789697976.4254086,
+    "ast_hash": "77e4497609395842a2c1cc749da9cb11",
+    "semantic_hash": ""
+  },
+  "docs/posicionamiento.md": {
+    "mtime": 1785340157.2579372,
+    "seen": 1789697976.42541,
+    "ast_hash": "8b9a244a5e781d6f4500e93fb31c562c",
+    "semantic_hash": ""
+  },
+  "docs/proyect_roadmap_.md": {
+    "mtime": 1785340157.2589355,
+    "seen": 1789697976.4254117,
+    "ast_hash": "887dc7cae0ed39a9072740c9aefbf682",
+    "semantic_hash": ""
+  },
+  "public/Bg-img.png": {
+    "mtime": 1784228885.4403553,
+    "seen": 1789697976.4254131,
+    "ast_hash": "386843a1d5b135356d80f095cad3f6de",
+    "semantic_hash": ""
+  },
+  "public/TaskFlowLogo.svg": {
+    "mtime": 1785251226.6970587,
+    "seen": 1789697976.4254143,
+    "ast_hash": "9a5a867df740c3eaae01b8e095a71559",
+    "semantic_hash": ""
+  },
+  "public/bd-gretting.png": {
+    "mtime": 1785251226.7114053,
+    "seen": 1789697976.4254158,
+    "ast_hash": "ad9656cfde2f716e6c429f5bbd12cc38",
+    "semantic_hash": ""
+  }
+}

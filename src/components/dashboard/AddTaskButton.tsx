@@ -1,7 +1,7 @@
-import type { Task } from "../../types/entity/Task";
+import type { Task } from "@/types/entity/Task";
 import { useState } from "react";
 import CreateTaskForm from "../task/CreateTaskForm";
-import type { User } from "../../types/entity/User";
+import type { User } from "@/types/entity/User";
 
 
 interface AddTaskButtonProp{

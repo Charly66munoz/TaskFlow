@@ -31,10 +31,11 @@ enum TaskEventType {
 }
 
 model User {
-  userId String @id @default(uuid()) @map("user_id") @db.Uuid
-  name   String
-  email  String @unique @db.VarChar(255)
-  role   Role   @default(member)
+  userId       String  @id @default(uuid()) @map("user_id") @db.Uuid
+  name         String
+  email        String  @unique @db.VarChar(255)
+  role         Role    @default(member)
+  passwordHash String?
 
   assignedTasks          Task[]
   actedTaskEvents        TaskEvent[] @relation("TaskEventActor") //los nombres deben coincidir ya que hay tres relaciones distintas entre estas dos entidades.

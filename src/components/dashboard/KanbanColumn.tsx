@@ -1,5 +1,5 @@
-import type { Task } from "../../types/entity/Task";
-import type { User } from "../../types/entity/User";
+import type { Task } from "@/types/entity/Task";
+import type { User } from "@/types/entity/User";
 import TaskCard from "../task/TaskCard";
 
 interface propKanbanColum {
