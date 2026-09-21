@@ -3106,6 +3106,58 @@
       "source_location": "L24"
     },
     {
+      "id": "src_generated_prisma_client_prismaclient",
+      "label": "PrismaClient",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "prismaclient",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "src_generated_prisma_client_task",
+      "label": "Task",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L53"
+    },
+    {
+      "id": "src_generated_prisma_client_taskevent",
+      "label": "TaskEvent",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "taskevent",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L58"
+    },
+    {
+      "id": "src_generated_prisma_client_user",
+      "label": "User",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "user",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L48"
+    },
+    {
       "id": "src_generated_prisma_enums_priority",
       "label": "Priority",
       "_callable": true,
@@ -3260,58 +3312,6 @@
       "norm_label": "userscalarfieldenum",
       "source_file": "src/generated/prisma/internal/prismaNamespaceBrowser.ts",
       "source_location": "L75"
-    },
-    {
-      "id": "src_generated_prisma_client_prismaclient",
-      "label": "PrismaClient",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "prismaclient",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L40"
-    },
-    {
-      "id": "src_generated_prisma_client_task",
-      "label": "Task",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L53"
-    },
-    {
-      "id": "src_generated_prisma_client_taskevent",
-      "label": "TaskEvent",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "taskevent",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L58"
-    },
-    {
-      "id": "src_generated_prisma_client_user",
-      "label": "User",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "user",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L48"
     },
     {
       "id": "src_generated_prisma_internal_class_logoptions",
@@ -6063,7 +6063,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "addtaskbuttonprop",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -6076,7 +6076,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "propsgreting",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -6089,7 +6089,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "kanbanboardprops",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -6102,7 +6102,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "propkanbancolum",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -6115,7 +6115,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "propdashboard",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -6128,7 +6128,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -6141,7 +6141,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskformdraft",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -6154,7 +6154,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -6167,7 +6167,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -6180,7 +6180,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskformdraft",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -6193,7 +6193,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskcardprop",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -6206,7 +6206,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "loadingspinnerprops",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -6219,7 +6219,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskwithrelations",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -6232,7 +6232,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "task",
       "source_file": "src/types/entity/Task.ts",
@@ -6245,7 +6245,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskstatus",
       "source_file": "src/types/entity/Task.ts",
@@ -6258,7 +6258,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskinput",
       "source_file": "src/types/entity/TaskInput.ts",
@@ -6271,7 +6271,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "user",
       "source_file": "src/types/entity/User.ts",
@@ -6913,6 +6913,42 @@
       "norm_label": "sectiontitleprops",
       "source_file": "src/components/pages/landing/SectionTitle.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "prisma_seed_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "prisma/seed.ts",
+      "source_location": "L69"
+    },
+    {
+      "id": "prisma_seed_seedtasks",
+      "label": "seedTasks()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "seedtasks()",
+      "source_file": "prisma/seed.ts",
+      "source_location": "L27"
+    },
+    {
+      "id": "prisma_seed_seedusers",
+      "label": "seedUsers()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "seedusers()",
+      "source_file": "prisma/seed.ts",
+      "source_location": "L10"
     },
     {
       "id": "src_generated_prisma_internal_class_decodebase64aswasm",
@@ -7952,7 +7988,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "page()",
       "source_file": "src/app/(app)/(dashboard)/page.tsx",
@@ -7964,7 +8000,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "addtaskbutton()",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -7976,7 +8012,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "greeting()",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -7988,7 +8024,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "kanbanboard()",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -8000,7 +8036,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "kanbancolumn()",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -8012,7 +8048,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "dashboard()",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -8024,7 +8060,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskform()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8036,7 +8072,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "parselocaldate()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8048,7 +8084,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "topriority()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8060,7 +8096,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "deletetaskform()",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -8072,7 +8108,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "edittaskform()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8084,7 +8120,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "formatdateforinput()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8096,7 +8132,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "parselocaldate()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8108,7 +8144,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "topriority()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8120,7 +8156,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskcard()",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -8132,7 +8168,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "loadingspinner()",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -8144,7 +8180,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8156,7 +8192,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "deletetaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8168,7 +8204,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "edittaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8180,7 +8216,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "maptasktoui()",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -8192,7 +8228,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtask()",
       "source_file": "src/service/taskService.ts",
@@ -8204,7 +8240,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "deletetask()",
       "source_file": "src/service/taskService.ts",
@@ -8216,7 +8252,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "edittask()",
       "source_file": "src/service/taskService.ts",
@@ -8228,7 +8264,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "gettasks()",
       "source_file": "src/service/taskService.ts",
@@ -8240,55 +8276,19 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "getusers()",
       "source_file": "src/service/userService.ts",
       "source_location": "L4"
     },
     {
-      "id": "prisma_seed_main",
-      "label": "main()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "main()",
-      "source_file": "prisma/seed.ts",
-      "source_location": "L69"
-    },
-    {
-      "id": "prisma_seed_seedtasks",
-      "label": "seedTasks()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "seedtasks()",
-      "source_file": "prisma/seed.ts",
-      "source_location": "L27"
-    },
-    {
-      "id": "prisma_seed_seedusers",
-      "label": "seedUsers()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "seedusers()",
-      "source_file": "prisma/seed.ts",
-      "source_location": "L10"
-    },
-    {
       "id": "src_app_layout_rootlayout",
       "label": "RootLayout()",
       "_callable": true,
       "_origin": "ast",
-      "community": 48,
-      "community_name": "app/layout.tsx",
+      "community": 6,
+      "community_name": "package.json",
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "src/app/layout.tsx",
@@ -8572,6 +8572,61 @@
       "source_location": "L53"
     },
     {
+      "id": "prisma_seed",
+      "label": "seed.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "seed.ts",
+      "source_file": "prisma/seed.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_db_client",
+      "label": "db/client.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "db/client.ts",
+      "source_file": "src/db/client.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_db_client_adapter",
+      "label": "adapter",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "adapter",
+      "source_file": "src/db/client.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "src_db_client_globalforprisma",
+      "label": "globalForPrisma",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "globalforprisma",
+      "source_file": "src/db/client.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_db_client_prisma",
+      "label": "prisma",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "prisma",
+      "source_file": "src/db/client.ts",
+      "source_location": "L36"
+    },
+    {
       "id": "src_generated_prisma_browser",
       "label": "browser.ts",
       "_origin": "ast",
@@ -8592,6 +8647,28 @@
       "norm_label": "$enums",
       "source_file": "src/generated/prisma/browser.ts",
       "source_location": "L18"
+    },
+    {
+      "id": "src_generated_prisma_client",
+      "label": "prisma/client.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "prisma/client.ts",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_generated_prisma_client_enums",
+      "label": "$Enums",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "$enums",
+      "source_file": "src/generated/prisma/client.ts",
+      "source_location": "L23"
     },
     {
       "id": "src_generated_prisma_enums",
@@ -8682,6 +8759,94 @@
       "source_location": "L1"
     },
     {
+      "id": "src_mocks_mocktasks",
+      "label": "mockTasks.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "mocktasks.ts",
+      "source_file": "src/mocks/mockTasks.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_mocks_mocktasks_deadline",
+      "label": "deadline",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "deadline",
+      "source_file": "src/mocks/mockTasks.ts",
+      "source_location": "L6"
+    },
+    {
+      "id": "src_mocks_mocktasks_mocktasks",
+      "label": "mockTasks",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "mocktasks",
+      "source_file": "src/mocks/mockTasks.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_mocks_mocktasks_today",
+      "label": "today",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "today",
+      "source_file": "src/mocks/mockTasks.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "src_mocks_mockusers",
+      "label": "mockUsers.ts",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "mockusers.ts",
+      "source_file": "src/mocks/mockUsers.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_mocks_mockusers_users",
+      "label": "users",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "code",
+      "norm_label": "users",
+      "source_file": "src/mocks/mockUsers.ts",
+      "source_location": "L4"
+    },
+    {
+      "id": "ref_prisma_adapter_neon",
+      "label": "@prisma/adapter-neon",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "concept",
+      "norm_label": "@prisma/adapter-neon",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "ref_uuid",
+      "label": "uuid",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "prismaNamespaceBrowser.ts",
+      "file_type": "concept",
+      "norm_label": "uuid",
+      "source_file": "package.json",
+      "source_location": "L24"
+    },
+    {
       "id": "tsconfig",
       "label": "tsconfig.json",
       "_origin": "ast",
@@ -8712,7 +8877,7 @@
       "file_type": "code",
       "norm_label": "allowjs",
       "source_file": "tsconfig.json",
-      "source_location": "L23"
+      "source_location": "L20"
     },
     {
       "id": "tsconfig_compileroptions_esmoduleinterop",
@@ -8723,7 +8888,7 @@
       "file_type": "code",
       "norm_label": "esmoduleinterop",
       "source_file": "tsconfig.json",
-      "source_location": "L13"
+      "source_location": "L10"
     },
     {
       "id": "tsconfig_compileroptions_exactoptionalpropertytypes",
@@ -8734,7 +8899,7 @@
       "file_type": "code",
       "norm_label": "exactoptionalpropertytypes",
       "source_file": "tsconfig.json",
-      "source_location": "L16"
+      "source_location": "L13"
     },
     {
       "id": "tsconfig_compileroptions_forceconsistentcasinginfilenames",
@@ -8745,7 +8910,7 @@
       "file_type": "code",
       "norm_label": "forceconsistentcasinginfilenames",
       "source_file": "tsconfig.json",
-      "source_location": "L20"
+      "source_location": "L17"
     },
     {
       "id": "tsconfig_compileroptions_incremental",
@@ -8756,7 +8921,7 @@
       "file_type": "code",
       "norm_label": "incremental",
       "source_file": "tsconfig.json",
-      "source_location": "L24"
+      "source_location": "L21"
     },
     {
       "id": "tsconfig_compileroptions_isolatedmodules",
@@ -8767,7 +8932,7 @@
       "file_type": "code",
       "norm_label": "isolatedmodules",
       "source_file": "tsconfig.json",
-      "source_location": "L29"
+      "source_location": "L26"
     },
     {
       "id": "tsconfig_compileroptions_jsx",
@@ -8778,7 +8943,7 @@
       "file_type": "code",
       "norm_label": "jsx",
       "source_file": "tsconfig.json",
-      "source_location": "L22"
+      "source_location": "L19"
     },
     {
       "id": "tsconfig_compileroptions_lib",
@@ -8789,7 +8954,7 @@
       "file_type": "code",
       "norm_label": "lib",
       "source_file": "tsconfig.json",
-      "source_location": "L7"
+      "source_location": "L4"
     },
     {
       "id": "tsconfig_compileroptions_module",
@@ -8800,7 +8965,7 @@
       "file_type": "code",
       "norm_label": "module",
       "source_file": "tsconfig.json",
-      "source_location": "L12"
+      "source_location": "L9"
     },
     {
       "id": "tsconfig_compileroptions_moduleresolution",
@@ -8811,7 +8976,7 @@
       "file_type": "code",
       "norm_label": "moduleresolution",
       "source_file": "tsconfig.json",
-      "source_location": "L18"
+      "source_location": "L15"
     },
     {
       "id": "tsconfig_compileroptions_noemit",
@@ -8822,7 +8987,7 @@
       "file_type": "code",
       "norm_label": "noemit",
       "source_file": "tsconfig.json",
-      "source_location": "L21"
+      "source_location": "L18"
     },
     {
       "id": "tsconfig_compileroptions_nofallthroughcasesinswitch",
@@ -8833,7 +8998,7 @@
       "file_type": "code",
       "norm_label": "nofallthroughcasesinswitch",
       "source_file": "tsconfig.json",
-      "source_location": "L28"
+      "source_location": "L25"
     },
     {
       "id": "tsconfig_compileroptions_nounusedlocals",
@@ -8844,7 +9009,7 @@
       "file_type": "code",
       "norm_label": "nounusedlocals",
       "source_file": "tsconfig.json",
-      "source_location": "L26"
+      "source_location": "L23"
     },
     {
       "id": "tsconfig_compileroptions_nounusedparameters",
@@ -8855,18 +9020,7 @@
       "file_type": "code",
       "norm_label": "nounusedparameters",
       "source_file": "tsconfig.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "tsconfig_compileroptions_paths",
-      "label": "paths",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "compilerOptions",
-      "file_type": "code",
-      "norm_label": "paths",
-      "source_file": "tsconfig.json",
-      "source_location": "L3"
+      "source_location": "L24"
     },
     {
       "id": "tsconfig_compileroptions_plugins",
@@ -8877,7 +9031,7 @@
       "file_type": "code",
       "norm_label": "plugins",
       "source_file": "tsconfig.json",
-      "source_location": "L30"
+      "source_location": "L27"
     },
     {
       "id": "tsconfig_compileroptions_resolvejsonmodule",
@@ -8888,7 +9042,7 @@
       "file_type": "code",
       "norm_label": "resolvejsonmodule",
       "source_file": "tsconfig.json",
-      "source_location": "L35"
+      "source_location": "L32"
     },
     {
       "id": "tsconfig_compileroptions_skiplibcheck",
@@ -8899,7 +9053,7 @@
       "file_type": "code",
       "norm_label": "skiplibcheck",
       "source_file": "tsconfig.json",
-      "source_location": "L14"
+      "source_location": "L11"
     },
     {
       "id": "tsconfig_compileroptions_strict",
@@ -8910,7 +9064,7 @@
       "file_type": "code",
       "norm_label": "strict",
       "source_file": "tsconfig.json",
-      "source_location": "L15"
+      "source_location": "L12"
     },
     {
       "id": "tsconfig_compileroptions_target",
@@ -8921,7 +9075,7 @@
       "file_type": "code",
       "norm_label": "target",
       "source_file": "tsconfig.json",
-      "source_location": "L6"
+      "source_location": "L3"
     },
     {
       "id": "tsconfig_compileroptions_verbatimmodulesyntax",
@@ -8932,7 +9086,7 @@
       "file_type": "code",
       "norm_label": "verbatimmodulesyntax",
       "source_file": "tsconfig.json",
-      "source_location": "L19"
+      "source_location": "L16"
     },
     {
       "id": "tsconfig_exclude",
@@ -8943,7 +9097,7 @@
       "file_type": "code",
       "norm_label": "exclude",
       "source_file": "tsconfig.json",
-      "source_location": "L44"
+      "source_location": "L41"
     },
     {
       "id": "tsconfig_include",
@@ -8954,62 +9108,7 @@
       "file_type": "code",
       "norm_label": "include",
       "source_file": "tsconfig.json",
-      "source_location": "L37"
-    },
-    {
-      "id": "src_db_client",
-      "label": "db/client.ts",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "db/client.ts",
-      "source_file": "src/db/client.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_db_client_adapter",
-      "label": "adapter",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "adapter",
-      "source_file": "src/db/client.ts",
-      "source_location": "L21"
-    },
-    {
-      "id": "src_db_client_globalforprisma",
-      "label": "globalForPrisma",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "globalforprisma",
-      "source_file": "src/db/client.ts",
-      "source_location": "L12"
-    },
-    {
-      "id": "src_generated_prisma_client",
-      "label": "prisma/client.ts",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "prisma/client.ts",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_generated_prisma_client_enums",
-      "label": "$Enums",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "code",
-      "norm_label": "$enums",
-      "source_file": "src/generated/prisma/client.ts",
-      "source_location": "L23"
+      "source_location": "L34"
     },
     {
       "id": "src_generated_prisma_internal_class",
@@ -9034,17 +9133,6 @@
       "source_location": "L18"
     },
     {
-      "id": "ref_prisma_adapter_neon",
-      "label": "@prisma/adapter-neon",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "PrismaClient",
-      "file_type": "concept",
-      "norm_label": "@prisma/adapter-neon",
-      "source_file": "package.json",
-      "source_location": "L16"
-    },
-    {
       "id": "package_dependencies",
       "label": "dependencies",
       "_origin": "ast",
@@ -9054,17 +9142,6 @@
       "norm_label": "dependencies",
       "source_file": "package.json",
       "source_location": "L12"
-    },
-    {
-      "id": "package_dependencies_bcryptjs",
-      "label": "bcryptjs",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L19"
     },
     {
       "id": "package_dependencies_fortawesome_free_regular_svg_icons",
@@ -9108,7 +9185,7 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L19"
     },
     {
       "id": "package_dependencies_postcss",
@@ -9119,7 +9196,7 @@
       "file_type": "code",
       "norm_label": "postcss",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L20"
     },
     {
       "id": "package_dependencies_prisma_adapter_neon",
@@ -9152,7 +9229,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -9163,7 +9240,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_tailwindcss",
@@ -9174,7 +9251,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_tailwindcss_postcss",
@@ -9196,161 +9273,7 @@
       "file_type": "code",
       "norm_label": "uuid",
       "source_file": "package.json",
-      "source_location": "L25"
-    },
-    {
-      "id": "package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "package.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "package_devdependencies_eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "package.json",
-      "source_location": "L33"
-    },
-    {
-      "id": "package_devdependencies_eslint_config_next",
-      "label": "eslint-config-next",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint-config-next",
-      "source_file": "package.json",
-      "source_location": "L34"
-    },
-    {
-      "id": "package_devdependencies_eslint_js",
-      "label": "@eslint/js",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@eslint/js",
-      "source_file": "package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "package_devdependencies_eslint_plugin_react_hooks",
-      "label": "eslint-plugin-react-hooks",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "eslint-plugin-react-hooks",
-      "source_file": "package.json",
-      "source_location": "L35"
-    },
-    {
-      "id": "package_devdependencies_globals",
-      "label": "globals",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "globals",
-      "source_file": "package.json",
-      "source_location": "L36"
-    },
-    {
-      "id": "package_devdependencies_prisma",
-      "label": "prisma",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "prisma",
-      "source_file": "package.json",
-      "source_location": "L37"
-    },
-    {
-      "id": "package_devdependencies_tsx",
-      "label": "tsx",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "tsx",
-      "source_file": "package.json",
-      "source_location": "L38"
-    },
-    {
-      "id": "package_devdependencies_types_bcryptjs",
-      "label": "@types/bcryptjs",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "package.json",
-      "source_location": "L30"
-    },
-    {
-      "id": "package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "package.json",
-      "source_location": "L31"
-    },
-    {
-      "id": "package_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "package.json",
-      "source_location": "L32"
-    },
-    {
-      "id": "package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "package.json",
-      "source_location": "L39"
-    },
-    {
-      "id": "package_devdependencies_typescript_eslint",
-      "label": "typescript-eslint",
-      "_origin": "ast",
-      "community": 17,
-      "community_name": "devDependencies",
-      "file_type": "code",
-      "norm_label": "typescript-eslint",
-      "source_file": "package.json",
-      "source_location": "L40"
+      "source_location": "L24"
     },
     {
       "id": "src_generated_prisma_models_user",
@@ -9489,7 +9412,7 @@
       "label": "(dashboard)/page.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "(dashboard)/page.tsx",
       "source_file": "src/app/(app)/(dashboard)/page.tsx",
@@ -9500,7 +9423,7 @@
       "label": "AddTaskButton.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "addtaskbutton.tsx",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -9511,7 +9434,7 @@
       "label": "Greeting.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "greeting.tsx",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -9522,7 +9445,7 @@
       "label": "KanbanBoard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "kanbanboard.tsx",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -9533,7 +9456,7 @@
       "label": "KanbanColumn.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "kanbancolumn.tsx",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -9544,7 +9467,7 @@
       "label": "Dashboard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "dashboard.tsx",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -9555,7 +9478,7 @@
       "label": "CreateTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "createtaskform.tsx",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -9566,7 +9489,7 @@
       "label": "initialDraft",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "initialdraft",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -9577,7 +9500,7 @@
       "label": "DeleteTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "deletetaskform.tsx",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -9588,7 +9511,7 @@
       "label": "EditTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "edittaskform.tsx",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -9599,7 +9522,7 @@
       "label": "TaskCard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskcard.tsx",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -9610,7 +9533,7 @@
       "label": "LoadingSpinner.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "loadingspinner.tsx",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -9621,29 +9544,18 @@
       "label": "sizeClasses",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "sizeclasses",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
       "source_location": "L6"
     },
     {
-      "id": "src_db_client_prisma",
-      "label": "prisma",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "CreateTaskForm.tsx",
-      "file_type": "code",
-      "norm_label": "prisma",
-      "source_file": "src/db/client.ts",
-      "source_location": "L36"
-    },
-    {
       "id": "src_server_actions_taskaction",
       "label": "taskAction.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskaction.ts",
       "source_file": "src/server/actions/taskAction.ts",
@@ -9654,7 +9566,7 @@
       "label": "taskMapper.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskmapper.ts",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -9665,7 +9577,7 @@
       "label": "taskService.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskservice.ts",
       "source_file": "src/service/taskService.ts",
@@ -9676,7 +9588,7 @@
       "label": "userService.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "userservice.ts",
       "source_file": "src/service/userService.ts",
@@ -9687,7 +9599,7 @@
       "label": "entity/Task.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "entity/task.ts",
       "source_file": "src/types/entity/Task.ts",
@@ -9698,7 +9610,7 @@
       "label": "TaskInput.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "taskinput.ts",
       "source_file": "src/types/entity/TaskInput.ts",
@@ -9709,7 +9621,7 @@
       "label": "entity/User.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "code",
       "norm_label": "entity/user.ts",
       "source_file": "src/types/entity/User.ts",
@@ -9720,187 +9632,11 @@
       "label": "react",
       "_origin": "ast",
       "community": 4,
-      "community_name": "CreateTaskForm.tsx",
+      "community_name": "Task",
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "prisma_seed",
-      "label": "seed.ts",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "seed.ts",
-      "source_file": "prisma/seed.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_mocks_mocktasks",
-      "label": "mockTasks.ts",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "mocktasks.ts",
-      "source_file": "src/mocks/mockTasks.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_mocks_mocktasks_deadline",
-      "label": "deadline",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "deadline",
-      "source_file": "src/mocks/mockTasks.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_mocks_mocktasks_mocktasks",
-      "label": "mockTasks",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "mocktasks",
-      "source_file": "src/mocks/mockTasks.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_mocks_mocktasks_today",
-      "label": "today",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "today",
-      "source_file": "src/mocks/mockTasks.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_mocks_mockusers",
-      "label": "mockUsers.ts",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "mockusers.ts",
-      "source_file": "src/mocks/mockUsers.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_mocks_mockusers_users",
-      "label": "users",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "code",
-      "norm_label": "users",
-      "source_file": "src/mocks/mockUsers.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "ref_uuid",
-      "label": "uuid",
-      "_origin": "ast",
-      "community": 46,
-      "community_name": "seed.ts",
-      "file_type": "concept",
-      "norm_label": "uuid",
-      "source_file": "package.json",
-      "source_location": "L25"
-    },
-    {
-      "id": "package_scripts",
-      "label": "scripts",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "package_scripts_build",
-      "label": "build",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "package.json",
-      "source_location": "L8"
-    },
-    {
-      "id": "package_scripts_dev",
-      "label": "dev",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "package.json",
-      "source_location": "L7"
-    },
-    {
-      "id": "package_scripts_lint",
-      "label": "lint",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "lint",
-      "source_file": "package.json",
-      "source_location": "L10"
-    },
-    {
-      "id": "package_scripts_start",
-      "label": "start",
-      "_origin": "ast",
-      "community": 47,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_app_layout",
-      "label": "app/layout.tsx",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "app/layout.tsx",
-      "file_type": "code",
-      "norm_label": "app/layout.tsx",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_layout_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "app/layout.tsx",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "ref_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "app/layout.tsx",
-      "file_type": "concept",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L21"
     },
     {
       "id": "src_generated_prisma_commoninputtypes",
@@ -9925,6 +9661,149 @@
       "source_location": "L1"
     },
     {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "devdependencies",
+      "source_file": "package.json",
+      "source_location": "L26"
+    },
+    {
+      "id": "package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "eslint",
+      "source_file": "package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "package_devdependencies_eslint_config_next",
+      "label": "eslint-config-next",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "eslint-config-next",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "package_devdependencies_eslint_js",
+      "label": "@eslint/js",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@eslint/js",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "package_devdependencies_eslint_plugin_react_hooks",
+      "label": "eslint-plugin-react-hooks",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "eslint-plugin-react-hooks",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
+      "id": "package_devdependencies_globals",
+      "label": "globals",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "globals",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "package_devdependencies_prisma",
+      "label": "prisma",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "prisma",
+      "source_file": "package.json",
+      "source_location": "L35"
+    },
+    {
+      "id": "package_devdependencies_tsx",
+      "label": "tsx",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "tsx",
+      "source_file": "package.json",
+      "source_location": "L36"
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "@types/react-dom",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "package.json",
+      "source_location": "L37"
+    },
+    {
+      "id": "package_devdependencies_typescript_eslint",
+      "label": "typescript-eslint",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "typescript-eslint",
+      "source_file": "package.json",
+      "source_location": "L38"
+    },
+    {
       "id": "package_name",
       "label": "name",
       "_origin": "ast",
@@ -9945,6 +9824,61 @@
       "norm_label": "private",
       "source_file": "package.json",
       "source_location": "L3"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "build",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dev",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "package_scripts_lint",
+      "label": "lint",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "lint",
+      "source_file": "package.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L9"
     },
     {
       "id": "package_type",
@@ -9969,15 +9903,26 @@
       "source_location": "L4"
     },
     {
-      "id": "ref_bcryptjs",
-      "label": "bcryptjs",
+      "id": "src_app_layout",
+      "label": "app/layout.tsx",
       "_origin": "ast",
       "community": 6,
       "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L19"
+      "file_type": "code",
+      "norm_label": "app/layout.tsx",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_layout_metadata",
+      "label": "metadata",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "metadata",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L4"
     },
     {
       "id": "ref_eslint",
@@ -9988,7 +9933,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L31"
     },
     {
       "id": "ref_eslint_config_next",
@@ -9999,7 +9944,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L32"
     },
     {
       "id": "ref_eslint_js",
@@ -10010,7 +9955,7 @@
       "file_type": "concept",
       "norm_label": "@eslint/js",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L27"
     },
     {
       "id": "ref_eslint_plugin_react_hooks",
@@ -10021,7 +9966,7 @@
       "file_type": "concept",
       "norm_label": "eslint-plugin-react-hooks",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L33"
     },
     {
       "id": "ref_fortawesome_free_regular_svg_icons",
@@ -10054,7 +9999,7 @@
       "file_type": "concept",
       "norm_label": "globals",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L34"
     },
     {
       "id": "ref_heroicons_react",
@@ -10068,6 +10013,17 @@
       "source_location": "L15"
     },
     {
+      "id": "ref_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
       "id": "ref_postcss",
       "label": "postcss",
       "_origin": "ast",
@@ -10076,7 +10032,7 @@
       "file_type": "concept",
       "norm_label": "postcss",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L20"
     },
     {
       "id": "ref_prisma",
@@ -10087,7 +10043,7 @@
       "file_type": "concept",
       "norm_label": "prisma",
       "source_file": "package.json",
-      "source_location": "L37"
+      "source_location": "L35"
     },
     {
       "id": "ref_prisma_client",
@@ -10109,7 +10065,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L22"
     },
     {
       "id": "ref_tailwindcss",
@@ -10120,7 +10076,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "ref_tailwindcss_postcss",
@@ -10142,18 +10098,7 @@
       "file_type": "concept",
       "norm_label": "tsx",
       "source_file": "package.json",
-      "source_location": "L38"
-    },
-    {
-      "id": "ref_types_bcryptjs",
-      "label": "@types/bcryptjs",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "@types/bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L36"
     },
     {
       "id": "ref_types_node",
@@ -10164,7 +10109,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L28"
     },
     {
       "id": "ref_types_react",
@@ -10175,7 +10120,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L29"
     },
     {
       "id": "ref_types_react_dom",
@@ -10186,7 +10131,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L30"
     },
     {
       "id": "ref_typescript",
@@ -10197,7 +10142,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L39"
+      "source_location": "L37"
     },
     {
       "id": "ref_typescript_eslint",
@@ -10208,7 +10153,7 @@
       "file_type": "concept",
       "norm_label": "typescript-eslint",
       "source_file": "package.json",
-      "source_location": "L40"
+      "source_location": "L38"
     },
     {
       "id": "src_app_app_landingpage_landingpage_page",
@@ -12314,6 +12259,222 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_dashboard_addtaskbutton_addtaskbuttonprop",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/AddTaskButton.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_addtaskbutton_addtaskbuttonprop",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/AddTaskButton.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_greeting_propsgreting",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/Greeting.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_greeting_propsgreting",
+      "target": "src_types_entity_task_taskstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/Greeting.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/KanbanBoard.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
+      "target": "src_types_entity_task_taskstatus",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/KanbanBoard.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/KanbanBoard.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_kanbancolumn_propkanbancolum",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/KanbanColumn.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_dashboard_kanbancolumn_propkanbancolum",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/dashboard/KanbanColumn.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_pages_dashboard_propdashboard",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/pages/Dashboard.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_pages_dashboard_propdashboard",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/pages/Dashboard.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_createtaskform_createtaskformprop",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/CreateTaskForm.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_createtaskform_createtaskformprop",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/CreateTaskForm.tsx",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_deletetaskform_createtaskformprop",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/DeleteTaskForm.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_edittaskform_createtaskformprop",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/EditTaskForm.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_edittaskform_createtaskformprop",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/EditTaskForm.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_taskcard_taskcardprop",
+      "target": "src_types_entity_task_task",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/TaskCard.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_taskcard_taskcardprop",
+      "target": "src_types_entity_user_user",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "src/components/task/TaskCard.tsx",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "src_types_entity_task_task",
       "target": "src_types_entity_user_user",
       "relation": "references",
@@ -12411,7 +12572,7 @@
     },
     {
       "source": "package",
-      "target": "ref_bcryptjs",
+      "target": "ref_next",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12423,7 +12584,7 @@
     },
     {
       "source": "package",
-      "target": "ref_next",
+      "target": "ref_postcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12435,7 +12596,7 @@
     },
     {
       "source": "package",
-      "target": "ref_postcss",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12447,7 +12608,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12459,7 +12620,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_tailwindcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12471,7 +12632,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_uuid",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -12483,18 +12644,6 @@
     },
     {
       "source": "package",
-      "target": "ref_uuid",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "ref_eslint_js",
       "relation": "imports",
       "_origin": "ast",
@@ -12502,19 +12651,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_types_bcryptjs",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -12526,7 +12663,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -12538,7 +12675,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -12550,7 +12687,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -12562,7 +12699,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -12574,7 +12711,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -12586,7 +12723,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -12598,7 +12735,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -12610,7 +12747,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -12622,7 +12759,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -12634,7 +12771,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -12646,7 +12783,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -12767,6 +12904,114 @@
       "context": "import",
       "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_about_about",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_ctasection_ctasection",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_features_features",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_footer_footer",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_hero_hero",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_howitworks_howitworks",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_navbar_navbar",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_productivityinsights_productivityinsights",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_landingpage_landingpage_page",
+      "target": "src_components_pages_landing_techstack_techstack",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -13094,6 +13339,18 @@
       "weight": 1.0
     },
     {
+      "source": "src_components_task_createtaskform",
+      "target": "src_components_ui_loadingspinner_loadingspinner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/task/CreateTaskForm.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
       "source": "src_components_task_deletetaskform",
       "target": "src_types_entity_task_task",
       "relation": "imports",
@@ -13103,6 +13360,18 @@
       "context": "import",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_deletetaskform",
+      "target": "src_components_ui_loadingspinner_loadingspinner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/task/DeleteTaskForm.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -13163,6 +13432,18 @@
       "context": "import",
       "source_file": "src/components/task/EditTaskForm.tsx",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_task_edittaskform",
+      "target": "src_components_ui_loadingspinner_loadingspinner",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/task/EditTaskForm.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -14746,7 +15027,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -14861,7 +15142,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_bcryptjs",
+      "target": "package_dependencies_next",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14872,7 +15153,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_postcss",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14883,7 +15164,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_postcss",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14894,7 +15175,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14905,7 +15186,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_tailwindcss",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -14916,24 +15197,13 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L24",
-      "weight": 1.0
-    },
-    {
-      "source": "package_dependencies",
       "target": "package_dependencies_uuid",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -14944,18 +15214,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_bcryptjs",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -14966,7 +15225,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -14977,7 +15236,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -14988,7 +15247,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -14999,7 +15258,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -15010,7 +15269,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -15021,7 +15280,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -15032,7 +15291,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -15043,7 +15302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -15054,7 +15313,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -15065,7 +15324,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -15076,7 +15335,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -21830,7 +22089,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L37",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -21841,18 +22100,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L44",
-      "weight": 1.0
-    },
-    {
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_module",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "tsconfig.json",
-      "source_location": "L12",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -21863,7 +22111,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L13",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -21874,7 +22122,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L14",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -21885,7 +22133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L15",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -21896,7 +22144,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L16",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -21907,7 +22155,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L18",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -21918,7 +22166,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L19",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -21929,7 +22177,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L20",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -21940,7 +22188,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L21",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -21951,7 +22199,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L22",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -21962,7 +22210,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L23",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -21973,7 +22221,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L24",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -21984,7 +22232,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L26",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -21995,7 +22243,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L27",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -22006,7 +22254,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L28",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -22017,18 +22265,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_paths",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "tsconfig.json",
-      "source_location": "L3",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -22039,18 +22276,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "tsconfig_compileroptions",
-      "target": "tsconfig_compileroptions_resolvejsonmodule",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "tsconfig.json",
-      "source_location": "L35",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -22061,7 +22287,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L6",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_resolvejsonmodule",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tsconfig.json",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -22072,7 +22309,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "tsconfig.json",
-      "source_location": "L7",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "tsconfig_compileroptions",
+      "target": "tsconfig_compileroptions_module",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tsconfig.json",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -23939,5 +24187,5 @@
       "source_file": "docs/estructura_carpetas.md"
     }
   ],
-  "built_at_commit": "669f85cd9b4446496fb8eef834d242d0d06ce70a"
+  "built_at_commit": "d02eb99ca8f1da6d46b7c53f7cd5b73d98fed193"
 }

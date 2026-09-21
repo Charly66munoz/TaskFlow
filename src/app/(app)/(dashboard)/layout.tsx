@@ -1,5 +1,5 @@
-import Sidebar from "../../../components/layouts/Sidebar";
-import Header from "../../../components/layouts/Header";
+import Sidebar from "@/components/layouts/Sidebar";
+import Header from "@/components/layouts/Header";
 
 function AppLayout({
     children,
