@@ -3,7 +3,7 @@
   "1": "prismaNamespace.ts",
   "2": "models/User.ts",
   "3": "models/Task.ts",
-  "4": "Task",
+  "4": "CreateTaskForm.tsx",
   "5": "commonInputTypes.ts",
   "6": "package.json",
   "7": "index.ts",
@@ -16,6 +16,7 @@
   "14": "TaskDelegate",
   "15": "TaskEventDelegate",
   "16": "UserDelegate",
+  "17": "devDependencies",
   "18": "Decision: organize src/ by responsibility",
   "19": "Prisma__TaskEventClient",
   "20": "Prisma__UserClient",
@@ -43,5 +44,8 @@
   "42": "Sprint 5 — Drag & drop",
   "43": "Sprint 6 — Metrics + AI summary",
   "44": "Sprint 7 — Deployment + polish",
-  "45": "Sprint 8 — Documentation"
+  "45": "Sprint 8 — Documentation",
+  "46": "seed.ts",
+  "47": "scripts",
+  "48": "app/layout.tsx"
 }
