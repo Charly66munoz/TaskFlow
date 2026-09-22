@@ -15,7 +15,7 @@ export function Navbar({ itShow }: navbarProp) {
     <header className="sticky  top-0 z-50 border-b border-slate-700/80 bg-slate-900/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link
-          href="/"
+          href="/landingPage"
           className="text-xl font-bold tracking-tight text-white"
           aria-label="TaskFlow home"
         >
@@ -39,7 +39,7 @@ export function Navbar({ itShow }: navbarProp) {
         </nav>
         <div className="flex items-center justify-center gap-2">
           <Link
-            href="/"
+            href="/login"
             className="rounded-xl bg-purple-600 px-2 py-2 text-xs font-semibold text-white shadow-lg transition hover:bg-purple-700 hover:shadow-xl"
           >
             Open TaskFlow

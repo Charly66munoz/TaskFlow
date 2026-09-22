@@ -1,6 +1,6 @@
 "use server";
 
-import  { SignupFormSchema, type FormState } from "@/lib/definitions"
+import  { SignupFormSchema, type FormState } from "@/server/lib/definitions"
 import { creatUser } from "@/service/userService";
 import { hashPassword } from "../security/hasher";
 import { redirect } from "next/navigation";

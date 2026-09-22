@@ -26,6 +26,29 @@ export const getUsers = async () => {
     return users
 }
 
+type UserWithPassword  = User & { password?: string };
+
+export const getUserbyEmail = async (data: string) => {
+    const userDb =  await prisma.user.findUnique({
+        where: { email: data },
+    });
+
+    if (!userDb) {
+        return null;
+    }
+    
+    const user: UserWithPassword = {
+        id: userDb.userId,
+        name: userDb.name,
+        email: userDb.email,
+        role: userDb.role,
+        ...(userDb?.passwordHash !== null && {
+        password: userDb?.passwordHash    })
+    }
+
+    return user
+}
+
 export const creatUser = async (user : CreateUserData) => {
     const userDb = await prisma.user.create({
         data: {

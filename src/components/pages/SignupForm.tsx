@@ -160,10 +160,10 @@ export default function SignupForm() {
             {pending ? "Creating account..." : "Sign Up"}
           </button>
           <Link
-            href="/"
+            href="/login"
             className="rounded-xl text-purple-600 px-2 py-2 text-xs font-semibold  transition hover:border-2 hover:border-purple-700  hover:shadow-xl"
           >
-            Ya tienes cuenta?
+            ¿Ya tienes cuenta?
           </Link>
         </form>
       </div>
