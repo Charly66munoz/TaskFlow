@@ -9,13 +9,12 @@ export const SignupFormSchema = z.object({
   email: z.email({ error: 'Please enter a valid email.' }).trim(),
   password: z
     .string()
-    // .min(8, { error: 'Be at least 8 characters long' })
-    .min(4, { error: 'Be at least 8 characters long' })
+    .min(8, { error: 'Be at least 8 characters long' })
     .regex(/[a-zA-Z]/, { error: 'Contain at least one letter.' })
-    // .regex(/[0-9]/, { error: 'Contain at least one number.' })
-    // .regex(/[^a-zA-Z0-9]/, {
-      // error: 'Contain at least one special character.',
-    // })
+    .regex(/[0-9]/, { error: 'Contain at least one number.' })
+    .regex(/[^a-zA-Z0-9]/, {
+      error: 'Contain at least one special character.',
+    })
     .trim(),
   confirmPassword: z.string()
   })
@@ -24,7 +23,6 @@ export const SignupFormSchema = z.object({
     path: ["confirmPassword"], // Define qué campo mostrará el error en el formulario
 });
 
- //3 describe que puede devolver un signup()
 export type FormState =
   {
       errors?: {
@@ -35,6 +33,24 @@ export type FormState =
       };
       values?: {
         name?: string;
+        email?: string;
+      };
+      message?: string
+    }
+  | undefined
+
+export const LoginFormSchema = z.object({
+  email: z.string().email({ error: 'Please enter a valid email.' }).trim(),
+  password: z.string().min(1,{ error: "Password is required." }),
+})
+
+export type FormStateLogin =
+  {
+      errors?: {
+        email?: string[]
+        password?: string[]
+      };
+      values?: {
         email?: string;
       };
       message?: string

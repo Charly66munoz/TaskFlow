@@ -10,19 +10,17 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         credentials: {
             email: {
             type: "email",
-            label: "Email",
-            placeholder: "johndoe@gmail.com",
+            
             },
             password: {
             type: "password",
-            label: "Password",
-            placeholder: "*****",
             },
         },
         authorize: async (credentials) => {
         let user = null
         
         user = await getUserbyEmail(String(credentials.email))
+
  
         if (!user || !user.password) return null
 
@@ -30,6 +28,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             String(credentials.password),
             user.password
         )
+
+
+        console.log("Password valid:", isValidPassword)
 
         if (!isValidPassword){
             return null
@@ -42,7 +43,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             email: user.email,
             role: user.role
         }
- 
+
         return userConfirm
       },
         })

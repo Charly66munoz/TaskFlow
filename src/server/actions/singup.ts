@@ -1,6 +1,8 @@
+"use server"
+
 "use server";
 
-import  { SignupFormSchema, type FormState } from "@/server/lib/definitions"
+import  { SignupFormSchema, type FormState } from "@/lib/definitions"
 import { creatUser } from "@/service/userService";
 import { hashPassword } from "../security/hasher";
 import { redirect } from "next/navigation";
@@ -46,5 +48,5 @@ export async function signup(state: FormState, formData: FormData) {
     role: 'owner'
   })
 
-  redirect("/landingPage");
+  redirect("/login");
 }

@@ -1,21 +1,20 @@
 "use client";
 
-import { signup } from "@/server/actions/signup";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
+import { login } from "@/server/actions/login";
 import Link from "next/link";
 import { useActionState } from "react";
 
-
 // VERIFICAR SI SESSION ACTIVA, SI LO ESTA PAGINA NO DEBERIA APARECER
 
-
-
 export default function LogIn() {
-  const [state, action, pending] = useActionState(signup, undefined);
+  const [state, action, pending] = useActionState(login, undefined);
   
   return (
     <div className="min-h-screen bg-slate-900 text-white">
       <div className="flex flex-col py-14 items-center">
         <form
+          action={action}
           className="w-full max-w-md space-y-6 rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-lg"
         >
           <div className="space-y-2">
@@ -61,7 +60,11 @@ export default function LogIn() {
                  outline-none transition
                  focus:border-purple-600 focus:ring-2 focus:ring-purple-600/30"
             />
+            {state?.errors?.password && (
+              <p className="text-sm text-red-500">{state.errors.password}</p>
+            )}
           </div>
+          {state?.message && <p className="text-sm text-red-500">{state.message}</p>}
 
           {/* Submit */}
           <button
@@ -73,10 +76,10 @@ export default function LogIn() {
                focus:outline-none focus:ring-2 focus:ring-purple-600/50
                disabled:cursor-not-allowed disabled:bg-slate-700 disabled:text-slate-500"
           >
-            {pending ? "Login in..." : "Login"}
+            {pending ? <LoadingSpinner /> : "Login"}
           </button>
           <Link
-            href="/singup"
+            href="/signup"
             className="rounded-xl text-purple-600 px-2 py-2 text-xs font-semibold  transition hover:border-2 hover:border-purple-700  hover:shadow-xl"
           >
             ¿Aun no tienes cuenta?

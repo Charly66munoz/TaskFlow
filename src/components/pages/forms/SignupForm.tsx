@@ -1,6 +1,6 @@
 "use client";
 
-import { signup } from "@/server/actions/signup";
+import { signup } from "@/server/actions/singup"
 import Link from "next/link";
 import { useActionState } from "react";
 
@@ -139,6 +139,11 @@ export default function SignupForm() {
 
               <ul className="space-y-1">
                 {state.errors.password.map((error) => (
+                  <li key={error} className="text-sm text-red-500">
+                    - {error}
+                  </li>
+                ))}
+                {state.errors.confirmPassword?.map((error) => (
                   <li key={error} className="text-sm text-red-500">
                     - {error}
                   </li>

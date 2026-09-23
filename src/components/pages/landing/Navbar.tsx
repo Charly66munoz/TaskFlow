@@ -48,10 +48,10 @@ export function Navbar({ itShow }: navbarProp) {
             No tienes cuenta?
           </p>
           <Link
-            href="/singup"
+            href="/signup"
             className="rounded-xl border border-purple-600  px-4 py-2 text-xs font-semibold text-center text-white shadow-lg transition hover:border-purple-700 hover:border-2 hover:shadow-xl"
           >
-            Sing up
+            Sign up
           </Link>
         </div>
         </>
