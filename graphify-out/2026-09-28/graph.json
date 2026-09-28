@@ -4692,58 +4692,6 @@
       "source_location": "L1169"
     },
     {
-      "id": "src_lib_definitions_formstate",
-      "label": "FormState",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "formstate",
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L26"
-    },
-    {
-      "id": "src_lib_definitions_formstatelogin",
-      "label": "FormStateLogin",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "formstatelogin",
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L47"
-    },
-    {
-      "id": "src_service_userservice_createuserdata",
-      "label": "CreateUserData",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "createuserdata",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L8"
-    },
-    {
-      "id": "src_service_userservice_userwithpassword",
-      "label": "UserWithPassword",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "userwithpassword",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L29"
-    },
-    {
       "id": "src_generated_prisma_models_task_prisma_taskclient",
       "label": "Prisma__TaskClient",
       "_callable": true,
@@ -6011,7 +5959,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "addtaskbuttonprop",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -6024,7 +5972,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "propsgreting",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -6037,7 +5985,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "kanbanboardprops",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -6050,7 +5998,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "propkanbancolum",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -6063,7 +6011,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "propdashboard",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -6076,7 +6024,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -6089,7 +6037,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskformdraft",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -6102,7 +6050,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -6115,7 +6063,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskformprop",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -6128,7 +6076,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskformdraft",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -6141,7 +6089,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskcardprop",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -6154,7 +6102,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "loadingspinnerprops",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -6167,7 +6115,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskwithrelations",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -6180,7 +6128,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "task",
       "source_file": "src/types/entity/Task.ts",
@@ -6193,7 +6141,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskstatus",
       "source_file": "src/types/entity/Task.ts",
@@ -6206,7 +6154,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskinput",
       "source_file": "src/types/entity/TaskInput.ts",
@@ -6219,7 +6167,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "user",
       "source_file": "src/types/entity/User.ts",
@@ -6939,19 +6887,6 @@
       "norm_label": "uuidwithaggregatesfilter",
       "source_file": "src/generated/prisma/commonInputTypes.ts",
       "source_location": "L71"
-    },
-    {
-      "id": "src_components_pages_landing_navbar_navbarprop",
-      "label": "navbarProp",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "index.ts",
-      "file_type": "code",
-      "norm_label": "navbarprop",
-      "source_file": "src/components/pages/landing/Navbar.tsx",
-      "source_location": "L9"
     },
     {
       "id": "src_components_pages_landing_productpreview_taskpreview",
@@ -7916,39 +7851,15 @@
       "source_location": "L1174"
     },
     {
-      "id": "src_app_app_app_layout_applayout",
+      "id": "src_app_app_dashboard_layout_applayout",
       "label": "AppLayout()",
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
       "norm_label": "applayout()",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_app_app_auth_layout_applayout",
-      "label": "AppLayout()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "applayout()",
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L4"
-    },
-    {
-      "id": "src_app_app_auth_signup_page_singup",
-      "label": "SingUp()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "singup()",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/layout.tsx",
       "source_location": "L4"
     },
     {
@@ -7957,11 +7868,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
       "norm_label": "header()",
       "source_file": "src/components/layouts/Header.tsx",
-      "source_location": "L10"
+      "source_location": "L8"
     },
     {
       "id": "src_components_layouts_sidebar_sidebar",
@@ -7969,131 +7880,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
       "norm_label": "sidebar()",
       "source_file": "src/components/layouts/Sidebar.tsx",
       "source_location": "L2"
-    },
-    {
-      "id": "src_components_pages_forms_loginform_login",
-      "label": "LogIn()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "login()",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_components_pages_forms_signupform_signupform",
-      "label": "SignupForm()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "signupform()",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_server_actions_auth_getsession_getsession",
-      "label": "getSession()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "getsession()",
-      "source_file": "src/server/actions/auth/getSession.ts",
-      "source_location": "L5"
-    },
-    {
-      "id": "src_server_actions_auth_login_login",
-      "label": "login()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "login()",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_server_actions_auth_logout_logout",
-      "label": "logout()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "logout()",
-      "source_file": "src/server/actions/auth/logout.ts",
-      "source_location": "L6"
-    },
-    {
-      "id": "src_server_actions_auth_singup_signup",
-      "label": "signup()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "signup()",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_server_security_hasher_hashpassword",
-      "label": "hashPassword()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "hashpassword()",
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_server_security_hasher_verifypassword",
-      "label": "verifyPassword()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "verifypassword()",
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_service_userservice_creatuser",
-      "label": "creatUser()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "creatuser()",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L52"
-    },
-    {
-      "id": "src_service_userservice_getuserbyemail",
-      "label": "getUserbyEmail()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "getuserbyemail()",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L31"
     },
     {
       "id": "src_generated_prisma_models_task_prisma_taskclient_assignee",
@@ -8156,15 +7947,15 @@
       "source_location": "L1144"
     },
     {
-      "id": "src_app_app_app_page_page",
+      "id": "src_app_app_dashboard_page_page",
       "label": "Page()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "page()",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L8"
     },
     {
@@ -8173,7 +7964,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "addtaskbutton()",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -8185,7 +7976,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "greeting()",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -8197,7 +7988,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "kanbanboard()",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -8209,7 +8000,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "kanbancolumn()",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -8221,7 +8012,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "dashboard()",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -8233,7 +8024,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskform()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8245,7 +8036,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "parselocaldate()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8257,7 +8048,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "topriority()",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -8269,7 +8060,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "deletetaskform()",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -8281,7 +8072,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "edittaskform()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8293,7 +8084,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "formatdateforinput()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8305,7 +8096,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "parselocaldate()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8317,7 +8108,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "topriority()",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -8329,7 +8120,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskcard()",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -8341,7 +8132,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "loadingspinner()",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -8353,7 +8144,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8365,7 +8156,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "deletetaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8377,7 +8168,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "edittaskaction()",
       "source_file": "src/server/actions/taskAction.ts",
@@ -8389,7 +8180,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "maptasktoui()",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -8401,7 +8192,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtask()",
       "source_file": "src/service/taskService.ts",
@@ -8413,7 +8204,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "deletetask()",
       "source_file": "src/service/taskService.ts",
@@ -8425,7 +8216,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "edittask()",
       "source_file": "src/service/taskService.ts",
@@ -8437,7 +8228,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "gettasks()",
       "source_file": "src/service/taskService.ts",
@@ -8449,11 +8240,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "getusers()",
       "source_file": "src/service/userService.ts",
-      "source_location": "L13"
+      "source_location": "L4"
     },
     {
       "id": "prisma_seed_main",
@@ -8496,24 +8287,36 @@
       "label": "RootLayout()",
       "_callable": true,
       "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
+      "community": 48,
+      "community_name": "app/layout.tsx",
       "file_type": "code",
       "norm_label": "rootlayout()",
       "source_file": "src/app/layout.tsx",
       "source_location": "L12"
     },
     {
-      "id": "src_app_app_auth_login_page_login",
-      "label": "Login()",
+      "id": "src_app_app_singup_singup_page_homepage",
+      "label": "HomePage()",
       "_callable": true,
       "_origin": "ast",
-      "community": 7,
-      "community_name": "index.ts",
+      "community": 49,
+      "community_name": "singup/page.tsx",
       "file_type": "code",
-      "norm_label": "login()",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L4"
+      "norm_label": "homepage()",
+      "source_file": "src/app/(app)/(singup)/singup/page.tsx",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_components_pages_signupform_signupform",
+      "label": "SignupForm()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "singup/page.tsx",
+      "file_type": "code",
+      "norm_label": "signupform()",
+      "source_file": "src/components/pages/SignupForm.tsx",
+      "source_location": "L6"
     },
     {
       "id": "src_app_app_landingpage_landingpage_page_homepage",
@@ -8609,7 +8412,7 @@
       "file_type": "code",
       "norm_label": "navbar()",
       "source_file": "src/components/pages/landing/Navbar.tsx",
-      "source_location": "L13"
+      "source_location": "L9"
     },
     {
       "id": "src_components_pages_landing_productivityinsights_productivityinsights",
@@ -9288,17 +9091,6 @@
       "source_location": "L20"
     },
     {
-      "id": "package_dependencies_next_auth",
-      "label": "next-auth",
-      "_origin": "ast",
-      "community": 13,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "next-auth",
-      "source_file": "package.json",
-      "source_location": "L21"
-    },
-    {
       "id": "package_dependencies_postcss",
       "label": "postcss",
       "_origin": "ast",
@@ -9307,7 +9099,7 @@
       "file_type": "code",
       "norm_label": "postcss",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L21"
     },
     {
       "id": "package_dependencies_prisma_adapter_neon",
@@ -9340,7 +9132,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L22"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -9351,7 +9143,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "package_dependencies_tailwindcss",
@@ -9362,7 +9154,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L24"
     },
     {
       "id": "package_dependencies_tailwindcss_postcss",
@@ -9384,18 +9176,161 @@
       "file_type": "code",
       "norm_label": "uuid",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L25"
     },
     {
-      "id": "src_app_api_auth_nextauth_route_get_post",
-      "label": "{ GET, POST }",
+      "id": "package_devdependencies",
+      "label": "devDependencies",
       "_origin": "ast",
       "community": 17,
-      "community_name": "{ GET, POST }",
+      "community_name": "devDependencies",
       "file_type": "code",
-      "norm_label": "{ get, post }",
-      "source_file": "src/app/api/auth/[...nextauth]/route.ts",
-      "source_location": "L2"
+      "norm_label": "devdependencies",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
+      "id": "package_devdependencies_eslint_config_next",
+      "label": "eslint-config-next",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint-config-next",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "package_devdependencies_eslint_js",
+      "label": "@eslint/js",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@eslint/js",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "package_devdependencies_eslint_plugin_react_hooks",
+      "label": "eslint-plugin-react-hooks",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint-plugin-react-hooks",
+      "source_file": "package.json",
+      "source_location": "L35"
+    },
+    {
+      "id": "package_devdependencies_globals",
+      "label": "globals",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "globals",
+      "source_file": "package.json",
+      "source_location": "L36"
+    },
+    {
+      "id": "package_devdependencies_prisma",
+      "label": "prisma",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "prisma",
+      "source_file": "package.json",
+      "source_location": "L37"
+    },
+    {
+      "id": "package_devdependencies_tsx",
+      "label": "tsx",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "tsx",
+      "source_file": "package.json",
+      "source_location": "L38"
+    },
+    {
+      "id": "package_devdependencies_types_bcryptjs",
+      "label": "@types/bcryptjs",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/bcryptjs",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react-dom",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "package.json",
+      "source_location": "L39"
+    },
+    {
+      "id": "package_devdependencies_typescript_eslint",
+      "label": "typescript-eslint",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "typescript-eslint",
+      "source_file": "package.json",
+      "source_location": "L40"
     },
     {
       "id": "src_generated_prisma_models_user",
@@ -9409,47 +9344,14 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_api_auth_nextauth_route",
-      "label": "route.ts",
+      "id": "src_app_app_dashboard_layout",
+      "label": "(dashboard)/layout.tsx",
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
-      "norm_label": "route.ts",
-      "source_file": "src/app/api/auth/[...nextauth]/route.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_app_app_layout",
-      "label": "(app)/layout.tsx",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "(app)/layout.tsx",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_app_auth_layout",
-      "label": "(auth)/layout.tsx",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "(auth)/layout.tsx",
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_app_auth_signup_page",
-      "label": "signup/page.tsx",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "signup/page.tsx",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
+      "norm_label": "(dashboard)/layout.tsx",
+      "source_file": "src/app/(app)/(dashboard)/layout.tsx",
       "source_location": "L1"
     },
     {
@@ -9457,7 +9359,7 @@
       "label": "Header.tsx",
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
       "norm_label": "header.tsx",
       "source_file": "src/components/layouts/Header.tsx",
@@ -9468,198 +9370,11 @@
       "label": "Sidebar.tsx",
       "_origin": "ast",
       "community": 21,
-      "community_name": "auth.ts",
+      "community_name": "(dashboard)/layout.tsx",
       "file_type": "code",
       "norm_label": "sidebar.tsx",
       "source_file": "src/components/layouts/Sidebar.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "src_components_pages_forms_loginform",
-      "label": "LoginForm.tsx",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "loginform.tsx",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_components_pages_forms_signupform",
-      "label": "SignupForm.tsx",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "signupform.tsx",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_definitions",
-      "label": "definitions.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "definitions.ts",
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_lib_definitions_loginformschema",
-      "label": "LoginFormSchema",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "loginformschema",
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L42"
-    },
-    {
-      "id": "src_lib_definitions_signupformschema",
-      "label": "SignupFormSchema",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "signupformschema",
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L4"
-    },
-    {
-      "id": "src_proxy",
-      "label": "proxy.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "proxy.ts",
-      "source_file": "src/proxy.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_actions_auth_getsession",
-      "label": "getSession.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "getsession.ts",
-      "source_file": "src/server/actions/auth/getSession.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_actions_auth_login",
-      "label": "login.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "login.ts",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_actions_auth_logout",
-      "label": "logout.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "logout.ts",
-      "source_file": "src/server/actions/auth/logout.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_actions_auth_singup",
-      "label": "singup.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "singup.ts",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_auth",
-      "label": "auth.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "auth.ts",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_server_auth_handlers_signin_signout_auth",
-      "label": "{ handlers, signIn, signOut, auth }",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "{ handlers, signin, signout, auth }",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L7"
-    },
-    {
-      "id": "src_server_security_hasher",
-      "label": "hasher.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "hasher.ts",
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_service_userservice",
-      "label": "userService.ts",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "code",
-      "norm_label": "userservice.ts",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L1"
-    },
-    {
-      "id": "ref_bcryptjs",
-      "label": "bcryptjs",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "concept",
-      "norm_label": "bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "ref_next_auth",
-      "label": "next-auth",
-      "_origin": "ast",
-      "community": 21,
-      "community_name": "auth.ts",
-      "file_type": "concept",
-      "norm_label": "next-auth",
-      "source_file": "package.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 23,
-      "community_name": "next.config.mjs",
-      "confidence": "EXTRACTED",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "next"
     },
     {
       "id": "next_config",
@@ -9750,14 +9465,14 @@
       "source_location": "L1"
     },
     {
-      "id": "src_app_app_app_page",
-      "label": "(app)/page.tsx",
+      "id": "src_app_app_dashboard_page",
+      "label": "(dashboard)/page.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
-      "norm_label": "(app)/page.tsx",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "norm_label": "(dashboard)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L1"
     },
     {
@@ -9765,7 +9480,7 @@
       "label": "AddTaskButton.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "addtaskbutton.tsx",
       "source_file": "src/components/dashboard/AddTaskButton.tsx",
@@ -9776,7 +9491,7 @@
       "label": "Greeting.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "greeting.tsx",
       "source_file": "src/components/dashboard/Greeting.tsx",
@@ -9787,7 +9502,7 @@
       "label": "KanbanBoard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "kanbanboard.tsx",
       "source_file": "src/components/dashboard/KanbanBoard.tsx",
@@ -9798,7 +9513,7 @@
       "label": "KanbanColumn.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "kanbancolumn.tsx",
       "source_file": "src/components/dashboard/KanbanColumn.tsx",
@@ -9809,7 +9524,7 @@
       "label": "Dashboard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "dashboard.tsx",
       "source_file": "src/components/pages/Dashboard.tsx",
@@ -9820,7 +9535,7 @@
       "label": "CreateTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "createtaskform.tsx",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -9831,7 +9546,7 @@
       "label": "initialDraft",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "initialdraft",
       "source_file": "src/components/task/CreateTaskForm.tsx",
@@ -9842,7 +9557,7 @@
       "label": "DeleteTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "deletetaskform.tsx",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
@@ -9853,7 +9568,7 @@
       "label": "EditTaskForm.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "edittaskform.tsx",
       "source_file": "src/components/task/EditTaskForm.tsx",
@@ -9864,7 +9579,7 @@
       "label": "TaskCard.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskcard.tsx",
       "source_file": "src/components/task/TaskCard.tsx",
@@ -9875,7 +9590,7 @@
       "label": "LoadingSpinner.tsx",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "loadingspinner.tsx",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -9886,7 +9601,7 @@
       "label": "sizeClasses",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "sizeclasses",
       "source_file": "src/components/ui/LoadingSpinner.tsx",
@@ -9897,7 +9612,7 @@
       "label": "taskAction.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskaction.ts",
       "source_file": "src/server/actions/taskAction.ts",
@@ -9908,7 +9623,7 @@
       "label": "taskMapper.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskmapper.ts",
       "source_file": "src/service/mapper/taskMapper.ts",
@@ -9919,10 +9634,21 @@
       "label": "taskService.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskservice.ts",
       "source_file": "src/service/taskService.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_service_userservice",
+      "label": "userService.ts",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "CreateTaskForm.tsx",
+      "file_type": "code",
+      "norm_label": "userservice.ts",
+      "source_file": "src/service/userService.ts",
       "source_location": "L1"
     },
     {
@@ -9930,7 +9656,7 @@
       "label": "entity/Task.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "entity/task.ts",
       "source_file": "src/types/entity/Task.ts",
@@ -9941,7 +9667,7 @@
       "label": "TaskInput.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "taskinput.ts",
       "source_file": "src/types/entity/TaskInput.ts",
@@ -9952,7 +9678,7 @@
       "label": "entity/User.ts",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "code",
       "norm_label": "entity/user.ts",
       "source_file": "src/types/entity/User.ts",
@@ -9963,11 +9689,11 @@
       "label": "react",
       "_origin": "ast",
       "community": 4,
-      "community_name": "Task",
+      "community_name": "CreateTaskForm.tsx",
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L22"
     },
     {
       "id": "prisma_seed",
@@ -10154,7 +9880,117 @@
       "file_type": "concept",
       "norm_label": "uuid",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L25"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L6"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "build",
+      "source_file": "package.json",
+      "source_location": "L8"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "dev",
+      "source_file": "package.json",
+      "source_location": "L7"
+    },
+    {
+      "id": "package_scripts_lint",
+      "label": "lint",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "lint",
+      "source_file": "package.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "scripts",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_app_layout",
+      "label": "app/layout.tsx",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "app/layout.tsx",
+      "file_type": "code",
+      "norm_label": "app/layout.tsx",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_app_layout_metadata",
+      "label": "metadata",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "app/layout.tsx",
+      "file_type": "code",
+      "norm_label": "metadata",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "app/layout.tsx",
+      "file_type": "concept",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_app_app_singup_singup_page",
+      "label": "singup/page.tsx",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "singup/page.tsx",
+      "file_type": "code",
+      "norm_label": "singup/page.tsx",
+      "source_file": "src/app/(app)/(singup)/singup/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_pages_signupform",
+      "label": "SignupForm.tsx",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "singup/page.tsx",
+      "file_type": "code",
+      "norm_label": "signupform.tsx",
+      "source_file": "src/components/pages/SignupForm.tsx",
+      "source_location": "L1"
     },
     {
       "id": "src_generated_prisma_commoninputtypes",
@@ -10179,160 +10015,6 @@
       "source_location": "L1"
     },
     {
-      "id": "package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "package_devdependencies_eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "package.json",
-      "source_location": "L34"
-    },
-    {
-      "id": "package_devdependencies_eslint_config_next",
-      "label": "eslint-config-next",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "eslint-config-next",
-      "source_file": "package.json",
-      "source_location": "L35"
-    },
-    {
-      "id": "package_devdependencies_eslint_js",
-      "label": "@eslint/js",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@eslint/js",
-      "source_file": "package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "package_devdependencies_eslint_plugin_react_hooks",
-      "label": "eslint-plugin-react-hooks",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "eslint-plugin-react-hooks",
-      "source_file": "package.json",
-      "source_location": "L36"
-    },
-    {
-      "id": "package_devdependencies_globals",
-      "label": "globals",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "globals",
-      "source_file": "package.json",
-      "source_location": "L37"
-    },
-    {
-      "id": "package_devdependencies_prisma",
-      "label": "prisma",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "prisma",
-      "source_file": "package.json",
-      "source_location": "L38"
-    },
-    {
-      "id": "package_devdependencies_tsx",
-      "label": "tsx",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "tsx",
-      "source_file": "package.json",
-      "source_location": "L39"
-    },
-    {
-      "id": "package_devdependencies_types_bcryptjs",
-      "label": "@types/bcryptjs",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/bcryptjs",
-      "source_file": "package.json",
-      "source_location": "L30"
-    },
-    {
-      "id": "package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "package.json",
-      "source_location": "L31"
-    },
-    {
-      "id": "package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "package.json",
-      "source_location": "L32"
-    },
-    {
-      "id": "package_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "package.json",
-      "source_location": "L33"
-    },
-    {
-      "id": "package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "package.json",
-      "source_location": "L40"
-    },
-    {
-      "id": "package_devdependencies_typescript_eslint",
-      "label": "typescript-eslint",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "typescript-eslint",
-      "source_file": "package.json",
-      "source_location": "L41"
-    },
-    {
       "id": "package_name",
       "label": "name",
       "_origin": "ast",
@@ -10353,61 +10035,6 @@
       "norm_label": "private",
       "source_file": "package.json",
       "source_location": "L3"
-    },
-    {
-      "id": "package_scripts",
-      "label": "scripts",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "package_scripts_build",
-      "label": "build",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "package.json",
-      "source_location": "L8"
-    },
-    {
-      "id": "package_scripts_dev",
-      "label": "dev",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "package.json",
-      "source_location": "L7"
-    },
-    {
-      "id": "package_scripts_lint",
-      "label": "lint",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "lint",
-      "source_file": "package.json",
-      "source_location": "L10"
-    },
-    {
-      "id": "package_scripts_start",
-      "label": "start",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L9"
     },
     {
       "id": "package_type",
@@ -10432,26 +10059,15 @@
       "source_location": "L4"
     },
     {
-      "id": "src_app_layout",
-      "label": "app/layout.tsx",
+      "id": "ref_bcryptjs",
+      "label": "bcryptjs",
       "_origin": "ast",
       "community": 6,
       "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "app/layout.tsx",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_app_layout_metadata",
-      "label": "metadata",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "metadata",
-      "source_file": "src/app/layout.tsx",
-      "source_location": "L4"
+      "file_type": "concept",
+      "norm_label": "bcryptjs",
+      "source_file": "package.json",
+      "source_location": "L19"
     },
     {
       "id": "ref_eslint",
@@ -10462,7 +10078,7 @@
       "file_type": "concept",
       "norm_label": "eslint",
       "source_file": "package.json",
-      "source_location": "L34"
+      "source_location": "L33"
     },
     {
       "id": "ref_eslint_config_next",
@@ -10473,7 +10089,7 @@
       "file_type": "concept",
       "norm_label": "eslint-config-next",
       "source_file": "package.json",
-      "source_location": "L35"
+      "source_location": "L34"
     },
     {
       "id": "ref_eslint_js",
@@ -10484,7 +10100,7 @@
       "file_type": "concept",
       "norm_label": "@eslint/js",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L28"
     },
     {
       "id": "ref_eslint_plugin_react_hooks",
@@ -10495,7 +10111,7 @@
       "file_type": "concept",
       "norm_label": "eslint-plugin-react-hooks",
       "source_file": "package.json",
-      "source_location": "L36"
+      "source_location": "L35"
     },
     {
       "id": "ref_fortawesome_free_regular_svg_icons",
@@ -10528,7 +10144,7 @@
       "file_type": "concept",
       "norm_label": "globals",
       "source_file": "package.json",
-      "source_location": "L37"
+      "source_location": "L36"
     },
     {
       "id": "ref_heroicons_react",
@@ -10542,17 +10158,6 @@
       "source_location": "L15"
     },
     {
-      "id": "ref_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L20"
-    },
-    {
       "id": "ref_postcss",
       "label": "postcss",
       "_origin": "ast",
@@ -10561,7 +10166,7 @@
       "file_type": "concept",
       "norm_label": "postcss",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L21"
     },
     {
       "id": "ref_prisma",
@@ -10572,7 +10177,7 @@
       "file_type": "concept",
       "norm_label": "prisma",
       "source_file": "package.json",
-      "source_location": "L38"
+      "source_location": "L37"
     },
     {
       "id": "ref_prisma_client",
@@ -10594,7 +10199,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L23"
     },
     {
       "id": "ref_tailwindcss",
@@ -10605,7 +10210,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L24"
     },
     {
       "id": "ref_tailwindcss_postcss",
@@ -10627,7 +10232,7 @@
       "file_type": "concept",
       "norm_label": "tsx",
       "source_file": "package.json",
-      "source_location": "L39"
+      "source_location": "L38"
     },
     {
       "id": "ref_types_bcryptjs",
@@ -10638,7 +10243,7 @@
       "file_type": "concept",
       "norm_label": "@types/bcryptjs",
       "source_file": "package.json",
-      "source_location": "L30"
+      "source_location": "L29"
     },
     {
       "id": "ref_types_node",
@@ -10649,7 +10254,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L30"
     },
     {
       "id": "ref_types_react",
@@ -10660,7 +10265,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L32"
+      "source_location": "L31"
     },
     {
       "id": "ref_types_react_dom",
@@ -10671,7 +10276,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L33"
+      "source_location": "L32"
     },
     {
       "id": "ref_typescript",
@@ -10682,7 +10287,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L40"
+      "source_location": "L39"
     },
     {
       "id": "ref_typescript_eslint",
@@ -10693,18 +10298,7 @@
       "file_type": "concept",
       "norm_label": "typescript-eslint",
       "source_file": "package.json",
-      "source_location": "L41"
-    },
-    {
-      "id": "src_app_app_auth_login_page",
-      "label": "login/page.tsx",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "index.ts",
-      "file_type": "code",
-      "norm_label": "login/page.tsx",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L1"
+      "source_location": "L40"
     },
     {
       "id": "src_app_app_landingpage_landingpage_page",
@@ -12389,63 +11983,27 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout_applayout",
-      "target": "src_server_actions_auth_getsession_getsession",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_app_page_page",
+      "source": "src_app_app_dashboard_page_page",
       "target": "src_service_userservice_getusers",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L10",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page_page",
+      "source": "src_app_app_dashboard_page_page",
       "target": "src_service_taskservice_gettasks",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_layout_applayout",
-      "target": "src_server_actions_auth_getsession_getsession",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_layouts_header_header",
-      "target": "src_server_actions_auth_logout_logout",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/components/layouts/Header.tsx",
-      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -12545,30 +12103,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_server_actions_auth_singup_signup",
-      "target": "src_server_security_hasher_hashpassword",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L42",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup_signup",
-      "target": "src_service_userservice_creatuser",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L44",
-      "weight": 1.0
-    },
-    {
       "source": "src_server_actions_taskaction_createtaskaction",
       "target": "src_service_taskservice_createtask",
       "relation": "calls",
@@ -12605,30 +12139,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_server_auth_handlers_signin_signout_auth",
-      "target": "src_service_userservice_getuserbyemail",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L22",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth_handlers_signin_signout_auth",
-      "target": "src_server_security_hasher_verifypassword",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L27",
-      "weight": 1.0
-    },
-    {
       "source": "src_service_taskservice_createtask",
       "target": "src_service_mapper_taskmapper_maptasktoui",
       "relation": "calls",
@@ -12662,18 +12172,6 @@
       "context": "call",
       "source_file": "src/service/taskService.ts",
       "source_location": "L21",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_api_auth_nextauth_route",
-      "target": "src_server_auth",
-      "relation": "re_exports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "export",
-      "source_file": "src/app/api/auth/[...nextauth]/route.ts",
-      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -12906,234 +12404,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_proxy",
-      "target": "src_server_auth",
-      "relation": "re_exports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "export",
-      "source_file": "src/proxy.ts",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_addtaskbutton_addtaskbuttonprop",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/AddTaskButton.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_addtaskbutton_addtaskbuttonprop",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/AddTaskButton.tsx",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_greeting_propsgreting",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/Greeting.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_greeting_propsgreting",
-      "target": "src_types_entity_task_taskstatus",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/Greeting.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/KanbanBoard.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
-      "target": "src_types_entity_task_taskstatus",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/KanbanBoard.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_kanbanboard_kanbanboardprops",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/KanbanBoard.tsx",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_kanbancolumn_propkanbancolum",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/KanbanColumn.tsx",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_dashboard_kanbancolumn_propkanbancolum",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/dashboard/KanbanColumn.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_dashboard_propdashboard",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/pages/Dashboard.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_dashboard_propdashboard",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/pages/Dashboard.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_createtaskform_createtaskformprop",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/CreateTaskForm.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_createtaskform_createtaskformprop",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/CreateTaskForm.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_deletetaskform_createtaskformprop",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/DeleteTaskForm.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_edittaskform_createtaskformprop",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/EditTaskForm.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_edittaskform_createtaskformprop",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/EditTaskForm.tsx",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_taskcard_taskcardprop",
-      "target": "src_types_entity_task_task",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/TaskCard.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_taskcard_taskcardprop",
-      "target": "src_types_entity_user_user",
-      "relation": "references",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "field",
-      "source_file": "src/components/task/TaskCard.tsx",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
       "source": "src_types_entity_task_task",
       "target": "src_types_entity_user_user",
       "relation": "references",
@@ -13255,7 +12525,7 @@
     },
     {
       "source": "package",
-      "target": "ref_next_auth",
+      "target": "ref_postcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13267,7 +12537,7 @@
     },
     {
       "source": "package",
-      "target": "ref_postcss",
+      "target": "ref_react",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13279,7 +12549,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13291,7 +12561,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_tailwindcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13303,7 +12573,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_uuid",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -13315,18 +12585,6 @@
     },
     {
       "source": "package",
-      "target": "ref_uuid",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "ref_eslint_js",
       "relation": "imports",
       "_origin": "ast",
@@ -13334,7 +12592,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -13346,7 +12604,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -13358,7 +12616,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -13370,7 +12628,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -13382,7 +12640,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -13394,7 +12652,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -13406,7 +12664,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -13418,7 +12676,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -13430,7 +12688,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -13442,7 +12700,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -13454,7 +12712,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -13466,7 +12724,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -13478,7 +12736,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -13518,266 +12776,74 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout",
-      "target": "src_components_layouts_sidebar_sidebar",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_app_layout",
-      "target": "src_components_layouts_header_header",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_app_layout",
-      "target": "src_server_actions_auth_getsession_getsession",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_components_pages_dashboard_dashboard",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_service_taskservice_gettasks",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L2",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_service_userservice_getusers",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L3",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_types_entity_task_task",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L4",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_types_entity_user_user",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L5",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_auth_layout",
-      "target": "src_server_actions_auth_getsession_getsession",
+      "source": "src_app_app_singup_singup_page",
+      "target": "src_components_pages_signupform_signupform",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_login_page",
-      "target": "src_components_pages_landing_navbar_navbar",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_login_page",
-      "target": "src_components_pages_forms_loginform_login",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_signup_page",
-      "target": "src_components_pages_landing_navbar_navbar",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_signup_page",
-      "target": "src_components_pages_forms_signupform_signupform",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_about_about",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_ctasection_ctasection",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_features_features",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_footer_footer",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_hero_hero",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_howitworks_howitworks",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_navbar_navbar",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_productivityinsights_productivityinsights",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_landingpage_landingpage_page",
-      "target": "src_components_pages_landing_techstack_techstack",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_file": "src/app/(app)/(singup)/singup/page.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -13926,18 +12992,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_layouts_header",
-      "target": "src_server_actions_auth_logout_logout",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/layouts/Header.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_pages_dashboard",
       "target": "src_components_dashboard_addtaskbutton_addtaskbutton",
       "relation": "imports",
@@ -13995,42 +13049,6 @@
       "context": "import",
       "source_file": "src/components/pages/Dashboard.tsx",
       "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform",
-      "target": "src_components_ui_loadingspinner_loadingspinner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform",
-      "target": "src_server_actions_auth_login_login",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_signupform",
-      "target": "src_server_actions_auth_singup_signup",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -14154,18 +13172,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_task_createtaskform",
-      "target": "src_components_ui_loadingspinner_loadingspinner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/task/CreateTaskForm.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_task_deletetaskform",
       "target": "src_types_entity_task_task",
       "relation": "imports",
@@ -14175,18 +13181,6 @@
       "context": "import",
       "source_file": "src/components/task/DeleteTaskForm.tsx",
       "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_deletetaskform",
-      "target": "src_components_ui_loadingspinner_loadingspinner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/task/DeleteTaskForm.tsx",
-      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14247,18 +13241,6 @@
       "context": "import",
       "source_file": "src/components/task/EditTaskForm.tsx",
       "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_task_edittaskform",
-      "target": "src_components_ui_loadingspinner_loadingspinner",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/task/EditTaskForm.tsx",
-      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -14370,78 +13352,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_server_actions_auth_login",
-      "target": "src_lib_definitions_formstatelogin",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_login",
-      "target": "src_lib_definitions_loginformschema",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_lib_definitions_formstate",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_lib_definitions_signupformschema",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_service_userservice_creatuser",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_server_security_hasher_hashpassword",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
       "source": "src_server_actions_taskaction",
       "target": "src_service_taskservice_createtask",
       "relation": "imports",
@@ -14487,42 +13397,6 @@
       "context": "import",
       "source_file": "src/server/actions/taskAction.ts",
       "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_server_security_hasher_verifypassword",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_service_userservice_getuserbyemail",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_types_entity_user_user",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -14658,161 +13532,89 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout",
+      "source": "src_app_app_dashboard_layout",
       "target": "src_components_layouts_sidebar",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
+      "source_file": "src/app/(app)/(dashboard)/layout.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout",
+      "source": "src_app_app_dashboard_layout",
       "target": "src_components_layouts_header",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
+      "source_file": "src/app/(app)/(dashboard)/layout.tsx",
       "source_location": "L2",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout",
-      "target": "src_server_actions_auth_getsession",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_components_pages_dashboard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_service_taskservice",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L2",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_service_userservice",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L3",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_types_entity_task",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L4",
       "type_only": true,
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
+      "source": "src_app_app_dashboard_page",
       "target": "src_types_entity_user",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L5",
       "type_only": true,
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_layout",
-      "target": "src_server_actions_auth_getsession",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_login_page",
-      "target": "src_components_pages_landing_index",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_login_page",
-      "target": "src_components_pages_forms_loginform",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L2",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_signup_page",
-      "target": "src_components_pages_landing_index",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_signup_page",
-      "target": "src_components_pages_forms_signupform",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
-      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -14824,6 +13626,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_singup_singup_page",
+      "target": "src_components_pages_signupform",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/app/(app)/(singup)/singup/page.tsx",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -14980,18 +13794,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_layouts_header",
-      "target": "src_server_actions_auth_logout",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/layouts/Header.tsx",
-      "source_location": "L8",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_pages_dashboard",
       "target": "ref_react",
       "relation": "imports_from",
@@ -15066,66 +13868,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_components_pages_forms_loginform",
-      "target": "src_components_ui_loadingspinner",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform",
-      "target": "src_server_actions_auth_login",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_signupform",
-      "target": "src_server_actions_auth_singup",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_signupform",
-      "target": "ref_react",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "src_components_pages_landing_about",
       "target": "src_components_pages_landing_sectiontitle",
       "relation": "imports_from",
@@ -15195,6 +13937,18 @@
       "context": "import",
       "source_file": "src/components/pages/landing/TechStack.tsx",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_pages_signupform",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/pages/SignupForm.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -15723,114 +14477,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_server_actions_auth_getsession",
-      "target": "src_server_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/getSession.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_login",
-      "target": "src_lib_definitions",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_login",
-      "target": "src_server_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_login",
-      "target": "ref_next_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_logout",
-      "target": "src_server_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/logout.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_logout",
-      "target": "ref_next_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/logout.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_lib_definitions",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_service_userservice",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_server_security_hasher",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
       "source": "src_server_actions_taskaction",
       "target": "src_service_taskservice",
       "relation": "imports_from",
@@ -15853,67 +14499,6 @@
       "source_file": "src/server/actions/taskAction.ts",
       "source_location": "L4",
       "type_only": true,
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "ref_next_auth",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_server_security_hasher",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L3",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_service_userservice",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_types_entity_user",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/auth.ts",
-      "source_location": "L5",
-      "type_only": true,
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_security_hasher",
-      "target": "ref_bcryptjs",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L1",
       "weight": 1.0
     },
     {
@@ -16014,19 +14599,6 @@
       "context": "import",
       "source_file": "src/service/userService.ts",
       "source_location": "L2",
-      "type_only": true,
-      "weight": 1.0
-    },
-    {
-      "source": "src_service_userservice",
-      "target": "src_generated_prisma_client",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "src/service/userService.ts",
-      "source_location": "L3",
       "type_only": true,
       "weight": 1.0
     },
@@ -16276,7 +14848,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -16413,7 +14985,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next_auth",
+      "target": "package_dependencies_postcss",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16424,7 +14996,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_postcss",
+      "target": "package_dependencies_react",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16435,7 +15007,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16446,7 +15018,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_tailwindcss",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -16457,24 +15029,13 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_tailwindcss",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "package_dependencies",
       "target": "package_dependencies_uuid",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -16485,7 +15046,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -16496,7 +15057,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "weight": 1.0
     },
     {
@@ -16507,7 +15068,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -16518,7 +15079,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -16529,7 +15090,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -16540,7 +15101,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -16551,7 +15112,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -16562,7 +15123,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -16573,7 +15134,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -16584,7 +15145,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -16595,7 +15156,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -16606,7 +15167,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -16617,7 +15178,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -16709,58 +15270,25 @@
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_layout",
-      "target": "src_app_app_app_layout_applayout",
+      "source": "src_app_app_dashboard_layout",
+      "target": "src_app_app_dashboard_layout_applayout",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/app/(app)/(app)/layout.tsx",
-      "source_location": "L6",
+      "source_file": "src/app/(app)/(dashboard)/layout.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
-      "source": "src_app_app_app_page",
-      "target": "src_app_app_app_page_page",
+      "source": "src_app_app_dashboard_page",
+      "target": "src_app_app_dashboard_page_page",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "src/app/(app)/(app)/page.tsx",
+      "source_file": "src/app/(app)/(dashboard)/page.tsx",
       "source_location": "L8",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_layout",
-      "target": "src_app_app_auth_layout_applayout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/(app)/(auth)/layout.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_login_page",
-      "target": "src_app_app_auth_login_page_login",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/(app)/(auth)/login/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_app_app_auth_signup_page",
-      "target": "src_app_app_auth_signup_page_singup",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/app/(app)/(auth)/signup/page.tsx",
-      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -16772,6 +15300,17 @@
       "confidence_score": 1.0,
       "source_file": "src/app/(app)/(landingPage)/landingPage/page.tsx",
       "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app_singup_singup_page",
+      "target": "src_app_app_singup_singup_page_homepage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/(app)/(singup)/singup/page.tsx",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -16892,7 +15431,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/components/layouts/Header.tsx",
-      "source_location": "L10",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -16926,28 +15465,6 @@
       "confidence_score": 1.0,
       "source_file": "src/components/pages/Dashboard.tsx",
       "source_location": "L16",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform",
-      "target": "src_components_pages_forms_loginform_login",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_signupform",
-      "target": "src_components_pages_forms_signupform_signupform",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -17040,17 +15557,6 @@
     },
     {
       "source": "src_components_pages_landing_navbar",
-      "target": "src_components_pages_landing_navbar_navbar",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/components/pages/landing/Navbar.tsx",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_landing_navbar",
       "target": "src_components_pages_landing_navbar_navigation",
       "relation": "contains",
       "_origin": "ast",
@@ -17062,7 +15568,7 @@
     },
     {
       "source": "src_components_pages_landing_navbar",
-      "target": "src_components_pages_landing_navbar_navbarprop",
+      "target": "src_components_pages_landing_navbar_navbar",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -17201,6 +15707,17 @@
       "confidence_score": 1.0,
       "source_file": "src/components/pages/landing/TechStack.tsx",
       "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_pages_signupform",
+      "target": "src_components_pages_signupform_signupform",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/pages/SignupForm.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -23232,50 +21749,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_lib_definitions",
-      "target": "src_lib_definitions_formstate",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "src_lib_definitions",
-      "target": "src_lib_definitions_signupformschema",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "src_lib_definitions",
-      "target": "src_lib_definitions_loginformschema",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L42",
-      "weight": 1.0
-    },
-    {
-      "source": "src_lib_definitions",
-      "target": "src_lib_definitions_formstatelogin",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/lib/definitions.ts",
-      "source_location": "L47",
-      "weight": 1.0
-    },
-    {
       "source": "src_mocks_mocktasks",
       "target": "src_mocks_mocktasks_today",
       "relation": "contains",
@@ -23320,50 +21793,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_server_actions_auth_getsession",
-      "target": "src_server_actions_auth_getsession_getsession",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/actions/auth/getSession.ts",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_login",
-      "target": "src_server_actions_auth_login_login",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/actions/auth/login.ts",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_logout",
-      "target": "src_server_actions_auth_logout_logout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/actions/auth/logout.ts",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_actions_auth_singup",
-      "target": "src_server_actions_auth_singup_signup",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/actions/auth/singup.ts",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
       "source": "src_server_actions_taskaction",
       "target": "src_server_actions_taskaction_deletetaskaction",
       "relation": "contains",
@@ -23394,39 +21823,6 @@
       "confidence_score": 1.0,
       "source_file": "src/server/actions/taskAction.ts",
       "source_location": "L9",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_auth",
-      "target": "src_server_auth_handlers_signin_signout_auth",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/auth.ts",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_security_hasher",
-      "target": "src_server_security_hasher_verifypassword",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_server_security_hasher",
-      "target": "src_server_security_hasher_hashpassword",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/server/security/hasher.ts",
-      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -23503,51 +21899,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/service/userService.ts",
-      "source_location": "L13",
-      "weight": 1.0
-    },
-    {
-      "source": "src_service_userservice",
-      "target": "src_service_userservice_userwithpassword",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/service/userService.ts",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "src_service_userservice",
-      "target": "src_service_userservice_getuserbyemail",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/service/userService.ts",
-      "source_location": "L31",
-      "weight": 1.0
-    },
-    {
-      "source": "src_service_userservice",
-      "target": "src_service_userservice_creatuser",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/service/userService.ts",
-      "source_location": "L52",
-      "weight": 1.0
-    },
-    {
-      "source": "src_service_userservice",
-      "target": "src_service_userservice_createuserdata",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/service/userService.ts",
-      "source_location": "L8",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -23857,15 +22209,6 @@
       "source_file": "tsconfig.json",
       "source_location": "L7",
       "weight": 1.0
-    },
-    {
-      "source": "next_config",
-      "target": "next",
-      "relation": "dynamic_import",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "next.config.mjs"
     },
     {
       "source": "src_generated_prisma_internal_class",
@@ -24783,30 +23126,6 @@
       "confidence_score": 1.0,
       "source_file": "src/generated/prisma/models/User.ts",
       "source_location": "L980",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_loginform_login",
-      "target": "src_server_actions_auth_login_login",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "src/components/pages/forms/LoginForm.tsx",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "src_components_pages_forms_signupform_signupform",
-      "target": "src_server_actions_auth_singup_signup",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "src/components/pages/forms/SignupForm.tsx",
-      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -25782,5 +24101,5 @@
       "source_file": "docs/estructura_carpetas.md"
     }
   ],
-  "built_at_commit": "92737da22f65d14e281e431bc83c58af82f65de6"
+  "built_at_commit": "f4ab1c87d5be44812b633bb55932c199c0a5a093"
 }
