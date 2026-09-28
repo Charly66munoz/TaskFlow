@@ -1,8 +1,7 @@
 "use server";
 
 import  { LoginFormSchema, type FormStateLogin } from "@/lib/definitions"
-import { signIn } from "../auth";
-import { error } from "console";
+import { signIn } from "../../auth";
 import { AuthError } from "next-auth";
 
 export async function login(state: FormStateLogin, formData: FormData) {
@@ -37,7 +36,7 @@ export async function login(state: FormStateLogin, formData: FormData) {
   } catch (error) {
   if (error instanceof AuthError) {
     return {
-      message: "Email or password is incorrect.",
+      message: "Email o contraseña incorrecta",
       values: {
         email: emailValue,
       },

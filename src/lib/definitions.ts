@@ -40,7 +40,7 @@ export type FormState =
   | undefined
 
 export const LoginFormSchema = z.object({
-  email: z.string().email({ error: 'Please enter a valid email.' }).trim(),
+  email: z.string().email({ error: 'Please enter a valid email.' }).trim().toLowerCase(),
   password: z.string().min(1,{ error: "Password is required." }),
 })
 

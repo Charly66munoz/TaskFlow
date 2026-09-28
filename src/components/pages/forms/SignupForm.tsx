@@ -1,34 +1,35 @@
 "use client";
 
-import { signup } from "@/server/actions/singup"
+import { signup } from "@/server/actions/auth/singup"
 import Link from "next/link";
 import { useActionState } from "react";
 
 export default function SignupForm() {
   const [state, action, pending] = useActionState(signup, undefined);
-  //desestructuración el array
+  
+  /*desestructuración el array
 
-  //undifined es el estado inicial
+  undifined es el estado inicial
 
-  // Por eso inicialmente:
+  Por eso inicialmente:
 
-  // state === undefined
-  // pending === false
+  state === undefined
+  pending === false
 
-  //luego
+  luego
 
-  // state   → resultado de signup()
-  // action  → función que envío con el formulario
-  // pending → ¿signup está ejecutándose?
+  state   → resultado de signup()
+  action  → función que envío con el formulario
+  pending → ¿signup está ejecutándose?
 
-  // El primer argumento es el estado anterior.
-  // Como todavía no hubo ninguna ejecución, vale undefined.
+  El primer argumento es el estado anterior.
+  Como todavía no hubo ninguna ejecución, vale undefined.
 
-  // El segundo argumento es formData.
-  // FormData contiene los valores enviados por el formulario (el objeto que se envia),
-  // usando el atributo "name" de cada input.
+  El segundo argumento es formData.
+  FormData contiene los valores enviados por el formulario (el objeto que se envia),
+  usando el atributo "name" de cada input.
 
-  // Después, dentro de signup(), usamos esos datos para validarlos.
+  Después, dentro de signup(), usamos esos datos para validarlos. */
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">

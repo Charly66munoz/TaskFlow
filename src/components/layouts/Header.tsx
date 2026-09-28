@@ -4,8 +4,15 @@
 //   { name: "Marketplace", href: "#" },
 //   { name: "Company", href: "#" },
 // ];
+"use client"
+import { logout } from "@/server/actions/auth/logout";
 
 const Header = ()=>{
+
+  const handleLogout = async ()=>{
+    await logout()
+  }
+
   return (
     <header className="shadow-xl/10 h-15 flex flex-col justify-center">
       <nav
@@ -31,7 +38,7 @@ const Header = ()=>{
             ))}
           </div> */}
         <div className=" lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-md/6 font-semibold text-purple-600 ">
+          <a href="#" onClick={handleLogout} className="text-md/6 font-semibold text-purple-600 ">
             Log out
           </a>
         </div>

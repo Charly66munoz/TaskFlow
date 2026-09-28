@@ -1,25 +1,27 @@
 import Sidebar from "@/components/layouts/Sidebar";
 import Header from "@/components/layouts/Header";
+import { getSession } from "@/server/actions/auth/getSession";
+import { redirect } from "next/navigation";
 
-function AppLayout({
+async function AppLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
+  const session = await getSession();
+
+  if(!session) redirect("/login?reason=unauthorized");
+
   
   return (
       <div className="relative min-h-screen">
-        {/* Background */}
         <div
           className="absolute inset-0 bg-cover bg-center opacity-75"
           style={{
             backgroundImage: `url('/Bg-img.png')`,
-            // Ocupa toda la altura de la pantalla
           }}
         ></div>
-        {/* Overlay  aqui se puede tocar para cambiar el color a light*/}
         <div className="absolute inset-0 bg-slate-900/80" />
-        {/* Application */}
         <div className="relative z-10 flex flex-col h-screen  ">
           <div className="flex flex-row">
             <div className="basis-3/3">
