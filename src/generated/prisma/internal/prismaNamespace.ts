@@ -684,7 +684,8 @@ export const UserScalarFieldEnum = {
   userId: 'userId',
   name: 'name',
   email: 'email',
-  role: 'role'
+  role: 'role',
+  passwordHash: 'passwordHash'
 } as const
 
 export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
@@ -694,6 +695,7 @@ export const TaskScalarFieldEnum = {
   taskId: 'taskId',
   title: 'title',
   description: 'description',
+  createdById: 'createdById',
   assigneeId: 'assigneeId',
   status: 'status',
   priority: 'priority',

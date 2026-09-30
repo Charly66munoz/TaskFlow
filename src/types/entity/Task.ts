@@ -5,6 +5,7 @@ export interface Task{
 id: string,
 title?: string,
 description: string,
+createdBy: User, 
 assigneeTo?: User,
 priority?: 'low'|'medium'|'high',
 status: 'toDo'|'inProgress'|'finished',

@@ -182,6 +182,7 @@ export type UserWhereInput = {
   email?: Prisma.StringFilter<"User"> | string
   role?: Prisma.EnumRoleFilter<"User"> | $Enums.Role
   passwordHash?: Prisma.StringNullableFilter<"User"> | string | null
+  creatorTasks?: Prisma.TaskListRelationFilter
   assignedTasks?: Prisma.TaskListRelationFilter
   actedTaskEvents?: Prisma.TaskEventListRelationFilter
   fromAssigneeTaskEvents?: Prisma.TaskEventListRelationFilter
@@ -194,6 +195,7 @@ export type UserOrderByWithRelationInput = {
   email?: Prisma.SortOrder
   role?: Prisma.SortOrder
   passwordHash?: Prisma.SortOrderInput | Prisma.SortOrder
+  creatorTasks?: Prisma.TaskOrderByRelationAggregateInput
   assignedTasks?: Prisma.TaskOrderByRelationAggregateInput
   actedTaskEvents?: Prisma.TaskEventOrderByRelationAggregateInput
   fromAssigneeTaskEvents?: Prisma.TaskEventOrderByRelationAggregateInput
@@ -209,6 +211,7 @@ export type UserWhereUniqueInput = Prisma.AtLeast<{
   name?: Prisma.StringFilter<"User"> | string
   role?: Prisma.EnumRoleFilter<"User"> | $Enums.Role
   passwordHash?: Prisma.StringNullableFilter<"User"> | string | null
+  creatorTasks?: Prisma.TaskListRelationFilter
   assignedTasks?: Prisma.TaskListRelationFilter
   actedTaskEvents?: Prisma.TaskEventListRelationFilter
   fromAssigneeTaskEvents?: Prisma.TaskEventListRelationFilter
@@ -243,6 +246,7 @@ export type UserCreateInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutFromAssigneeInput
@@ -255,6 +259,7 @@ export type UserUncheckedCreateInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutFromAssigneeInput
@@ -267,6 +272,7 @@ export type UserUpdateInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutFromAssigneeNestedInput
@@ -279,6 +285,7 @@ export type UserUncheckedUpdateInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUncheckedUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUncheckedUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutFromAssigneeNestedInput
@@ -333,6 +340,11 @@ export type UserMinOrderByAggregateInput = {
   passwordHash?: Prisma.SortOrder
 }
 
+export type UserScalarRelationFilter = {
+  is?: Prisma.UserWhereInput
+  isNot?: Prisma.UserWhereInput
+}
+
 export type UserNullableScalarRelationFilter = {
   is?: Prisma.UserWhereInput | null
   isNot?: Prisma.UserWhereInput | null
@@ -350,10 +362,24 @@ export type NullableStringFieldUpdateOperationsInput = {
   set?: string | null
 }
 
+export type UserCreateNestedOneWithoutCreatorTasksInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutCreatorTasksInput, Prisma.UserUncheckedCreateWithoutCreatorTasksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutCreatorTasksInput
+  connect?: Prisma.UserWhereUniqueInput
+}
+
 export type UserCreateNestedOneWithoutAssignedTasksInput = {
   create?: Prisma.XOR<Prisma.UserCreateWithoutAssignedTasksInput, Prisma.UserUncheckedCreateWithoutAssignedTasksInput>
   connectOrCreate?: Prisma.UserCreateOrConnectWithoutAssignedTasksInput
   connect?: Prisma.UserWhereUniqueInput
+}
+
+export type UserUpdateOneRequiredWithoutCreatorTasksNestedInput = {
+  create?: Prisma.XOR<Prisma.UserCreateWithoutCreatorTasksInput, Prisma.UserUncheckedCreateWithoutCreatorTasksInput>
+  connectOrCreate?: Prisma.UserCreateOrConnectWithoutCreatorTasksInput
+  upsert?: Prisma.UserUpsertWithoutCreatorTasksInput
+  connect?: Prisma.UserWhereUniqueInput
+  update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutCreatorTasksInput, Prisma.UserUpdateWithoutCreatorTasksInput>, Prisma.UserUncheckedUpdateWithoutCreatorTasksInput>
 }
 
 export type UserUpdateOneWithoutAssignedTasksNestedInput = {
@@ -414,12 +440,42 @@ export type UserUpdateOneWithoutToAssigneeTaskEventsNestedInput = {
   update?: Prisma.XOR<Prisma.XOR<Prisma.UserUpdateToOneWithWhereWithoutToAssigneeTaskEventsInput, Prisma.UserUpdateWithoutToAssigneeTaskEventsInput>, Prisma.UserUncheckedUpdateWithoutToAssigneeTaskEventsInput>
 }
 
+export type UserCreateWithoutCreatorTasksInput = {
+  userId?: string
+  name: string
+  email: string
+  role?: $Enums.Role
+  passwordHash?: string | null
+  assignedTasks?: Prisma.TaskCreateNestedManyWithoutAssigneeInput
+  actedTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutActorInput
+  fromAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutFromAssigneeInput
+  toAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutToAssigneeInput
+}
+
+export type UserUncheckedCreateWithoutCreatorTasksInput = {
+  userId?: string
+  name: string
+  email: string
+  role?: $Enums.Role
+  passwordHash?: string | null
+  assignedTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutAssigneeInput
+  actedTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutActorInput
+  fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutFromAssigneeInput
+  toAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutToAssigneeInput
+}
+
+export type UserCreateOrConnectWithoutCreatorTasksInput = {
+  where: Prisma.UserWhereUniqueInput
+  create: Prisma.XOR<Prisma.UserCreateWithoutCreatorTasksInput, Prisma.UserUncheckedCreateWithoutCreatorTasksInput>
+}
+
 export type UserCreateWithoutAssignedTasksInput = {
   userId?: string
   name: string
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskCreateNestedManyWithoutCreatedByInput
   actedTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutFromAssigneeInput
   toAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutToAssigneeInput
@@ -431,6 +487,7 @@ export type UserUncheckedCreateWithoutAssignedTasksInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutCreatedByInput
   actedTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutFromAssigneeInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutToAssigneeInput
@@ -439,6 +496,41 @@ export type UserUncheckedCreateWithoutAssignedTasksInput = {
 export type UserCreateOrConnectWithoutAssignedTasksInput = {
   where: Prisma.UserWhereUniqueInput
   create: Prisma.XOR<Prisma.UserCreateWithoutAssignedTasksInput, Prisma.UserUncheckedCreateWithoutAssignedTasksInput>
+}
+
+export type UserUpsertWithoutCreatorTasksInput = {
+  update: Prisma.XOR<Prisma.UserUpdateWithoutCreatorTasksInput, Prisma.UserUncheckedUpdateWithoutCreatorTasksInput>
+  create: Prisma.XOR<Prisma.UserCreateWithoutCreatorTasksInput, Prisma.UserUncheckedCreateWithoutCreatorTasksInput>
+  where?: Prisma.UserWhereInput
+}
+
+export type UserUpdateToOneWithWhereWithoutCreatorTasksInput = {
+  where?: Prisma.UserWhereInput
+  data: Prisma.XOR<Prisma.UserUpdateWithoutCreatorTasksInput, Prisma.UserUncheckedUpdateWithoutCreatorTasksInput>
+}
+
+export type UserUpdateWithoutCreatorTasksInput = {
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
+  passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  assignedTasks?: Prisma.TaskUpdateManyWithoutAssigneeNestedInput
+  actedTaskEvents?: Prisma.TaskEventUpdateManyWithoutActorNestedInput
+  fromAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutFromAssigneeNestedInput
+  toAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutToAssigneeNestedInput
+}
+
+export type UserUncheckedUpdateWithoutCreatorTasksInput = {
+  userId?: Prisma.StringFieldUpdateOperationsInput | string
+  name?: Prisma.StringFieldUpdateOperationsInput | string
+  email?: Prisma.StringFieldUpdateOperationsInput | string
+  role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
+  passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  assignedTasks?: Prisma.TaskUncheckedUpdateManyWithoutAssigneeNestedInput
+  actedTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutActorNestedInput
+  fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutFromAssigneeNestedInput
+  toAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutToAssigneeNestedInput
 }
 
 export type UserUpsertWithoutAssignedTasksInput = {
@@ -458,6 +550,7 @@ export type UserUpdateWithoutAssignedTasksInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUpdateManyWithoutCreatedByNestedInput
   actedTaskEvents?: Prisma.TaskEventUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutFromAssigneeNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutToAssigneeNestedInput
@@ -469,6 +562,7 @@ export type UserUncheckedUpdateWithoutAssignedTasksInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUncheckedUpdateManyWithoutCreatedByNestedInput
   actedTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutFromAssigneeNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutToAssigneeNestedInput
@@ -480,6 +574,7 @@ export type UserCreateWithoutActedTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskCreateNestedManyWithoutAssigneeInput
   fromAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutFromAssigneeInput
   toAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutToAssigneeInput
@@ -491,6 +586,7 @@ export type UserUncheckedCreateWithoutActedTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutAssigneeInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutFromAssigneeInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutToAssigneeInput
@@ -507,6 +603,7 @@ export type UserCreateWithoutFromAssigneeTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutActorInput
   toAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutToAssigneeInput
@@ -518,6 +615,7 @@ export type UserUncheckedCreateWithoutFromAssigneeTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutActorInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutToAssigneeInput
@@ -534,6 +632,7 @@ export type UserCreateWithoutToAssigneeTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventCreateNestedManyWithoutFromAssigneeInput
@@ -545,6 +644,7 @@ export type UserUncheckedCreateWithoutToAssigneeTaskEventsInput = {
   email: string
   role?: $Enums.Role
   passwordHash?: string | null
+  creatorTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutCreatedByInput
   assignedTasks?: Prisma.TaskUncheckedCreateNestedManyWithoutAssigneeInput
   actedTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutActorInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedCreateNestedManyWithoutFromAssigneeInput
@@ -572,6 +672,7 @@ export type UserUpdateWithoutActedTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUpdateManyWithoutAssigneeNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutFromAssigneeNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutToAssigneeNestedInput
@@ -583,6 +684,7 @@ export type UserUncheckedUpdateWithoutActedTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUncheckedUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUncheckedUpdateManyWithoutAssigneeNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutFromAssigneeNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutToAssigneeNestedInput
@@ -605,6 +707,7 @@ export type UserUpdateWithoutFromAssigneeTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUpdateManyWithoutActorNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutToAssigneeNestedInput
@@ -616,6 +719,7 @@ export type UserUncheckedUpdateWithoutFromAssigneeTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUncheckedUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUncheckedUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutActorNestedInput
   toAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutToAssigneeNestedInput
@@ -638,6 +742,7 @@ export type UserUpdateWithoutToAssigneeTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUpdateManyWithoutFromAssigneeNestedInput
@@ -649,6 +754,7 @@ export type UserUncheckedUpdateWithoutToAssigneeTaskEventsInput = {
   email?: Prisma.StringFieldUpdateOperationsInput | string
   role?: Prisma.EnumRoleFieldUpdateOperationsInput | $Enums.Role
   passwordHash?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  creatorTasks?: Prisma.TaskUncheckedUpdateManyWithoutCreatedByNestedInput
   assignedTasks?: Prisma.TaskUncheckedUpdateManyWithoutAssigneeNestedInput
   actedTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutActorNestedInput
   fromAssigneeTaskEvents?: Prisma.TaskEventUncheckedUpdateManyWithoutFromAssigneeNestedInput
@@ -660,6 +766,7 @@ export type UserUncheckedUpdateWithoutToAssigneeTaskEventsInput = {
  */
 
 export type UserCountOutputType = {
+  creatorTasks: number
   assignedTasks: number
   actedTaskEvents: number
   fromAssigneeTaskEvents: number
@@ -667,6 +774,7 @@ export type UserCountOutputType = {
 }
 
 export type UserCountOutputTypeSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  creatorTasks?: boolean | UserCountOutputTypeCountCreatorTasksArgs
   assignedTasks?: boolean | UserCountOutputTypeCountAssignedTasksArgs
   actedTaskEvents?: boolean | UserCountOutputTypeCountActedTaskEventsArgs
   fromAssigneeTaskEvents?: boolean | UserCountOutputTypeCountFromAssigneeTaskEventsArgs
@@ -681,6 +789,13 @@ export type UserCountOutputTypeDefaultArgs<ExtArgs extends runtime.Types.Extensi
    * Select specific fields to fetch from the UserCountOutputType
    */
   select?: Prisma.UserCountOutputTypeSelect<ExtArgs> | null
+}
+
+/**
+ * UserCountOutputType without action
+ */
+export type UserCountOutputTypeCountCreatorTasksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  where?: Prisma.TaskWhereInput
 }
 
 /**
@@ -718,6 +833,7 @@ export type UserSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = r
   email?: boolean
   role?: boolean
   passwordHash?: boolean
+  creatorTasks?: boolean | Prisma.User$creatorTasksArgs<ExtArgs>
   assignedTasks?: boolean | Prisma.User$assignedTasksArgs<ExtArgs>
   actedTaskEvents?: boolean | Prisma.User$actedTaskEventsArgs<ExtArgs>
   fromAssigneeTaskEvents?: boolean | Prisma.User$fromAssigneeTaskEventsArgs<ExtArgs>
@@ -751,6 +867,7 @@ export type UserSelectScalar = {
 
 export type UserOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"userId" | "name" | "email" | "role" | "passwordHash", ExtArgs["result"]["user"]>
 export type UserInclude<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  creatorTasks?: boolean | Prisma.User$creatorTasksArgs<ExtArgs>
   assignedTasks?: boolean | Prisma.User$assignedTasksArgs<ExtArgs>
   actedTaskEvents?: boolean | Prisma.User$actedTaskEventsArgs<ExtArgs>
   fromAssigneeTaskEvents?: boolean | Prisma.User$fromAssigneeTaskEventsArgs<ExtArgs>
@@ -763,6 +880,7 @@ export type UserIncludeUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensi
 export type $UserPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "User"
   objects: {
+    creatorTasks: Prisma.$TaskPayload<ExtArgs>[]
     assignedTasks: Prisma.$TaskPayload<ExtArgs>[]
     actedTaskEvents: Prisma.$TaskEventPayload<ExtArgs>[]
     fromAssigneeTaskEvents: Prisma.$TaskEventPayload<ExtArgs>[]
@@ -1168,6 +1286,7 @@ readonly fields: UserFieldRefs;
  */
 export interface Prisma__UserClient<T, Null = never, ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
   readonly [Symbol.toStringTag]: "PrismaPromise"
+  creatorTasks<T extends Prisma.User$creatorTasksArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$creatorTasksArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   assignedTasks<T extends Prisma.User$assignedTasksArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$assignedTasksArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TaskPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   actedTaskEvents<T extends Prisma.User$actedTaskEventsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$actedTaskEventsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TaskEventPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
   fromAssigneeTaskEvents<T extends Prisma.User$fromAssigneeTaskEventsArgs<ExtArgs> = {}>(args?: Prisma.Subset<T, Prisma.User$fromAssigneeTaskEventsArgs<ExtArgs>>): Prisma.PrismaPromise<runtime.Types.Result.GetResult<Prisma.$TaskEventPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
@@ -1596,6 +1715,30 @@ export type UserDeleteManyArgs<ExtArgs extends runtime.Types.Extensions.Internal
    * Limit how many Users to delete.
    */
   limit?: number
+}
+
+/**
+ * User.creatorTasks
+ */
+export type User$creatorTasksArgs<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
+  /**
+   * Select specific fields to fetch from the Task
+   */
+  select?: Prisma.TaskSelect<ExtArgs> | null
+  /**
+   * Omit specific fields from the Task
+   */
+  omit?: Prisma.TaskOmit<ExtArgs> | null
+  /**
+   * Choose, which related nodes to fetch as well
+   */
+  include?: Prisma.TaskInclude<ExtArgs> | null
+  where?: Prisma.TaskWhereInput
+  orderBy?: Prisma.TaskOrderByWithRelationInput | Prisma.TaskOrderByWithRelationInput[]
+  cursor?: Prisma.TaskWhereUniqueInput
+  take?: number
+  skip?: number
+  distinct?: Prisma.TaskScalarFieldEnum | Prisma.TaskScalarFieldEnum[]
 }
 
 /**

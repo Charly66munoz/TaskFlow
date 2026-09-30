@@ -4,6 +4,7 @@ import type { Task } from "@/types/entity/Task";
 type TaskWithRelations = Prisma.TaskGetPayload<{
   include: {
     assignee: true;
+    createdBy: true;
     taskEventList: {
                 orderBy: {
                     occurredAt: "desc"
@@ -26,7 +27,12 @@ export function mapTaskToUI(task: TaskWithRelations): Task {
         title: task.title ?? "",
 
         description: task.description,
-
+        createdBy: {
+            id: task.createdBy.userId,
+            name: task.createdBy.name,
+            email: task.createdBy.email,
+            role: task.createdBy.role,
+        },
         ...(task.assignee && {
         assigneeTo: {
             id: task.assignee.userId,

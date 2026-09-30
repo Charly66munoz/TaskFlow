@@ -6,6 +6,7 @@ import { mapTaskToUI } from "./mapper/taskMapper"
 export const getTasks = async () => {
     const tasksDb = await prisma.task.findMany({
         include: {
+            createdBy: true,
             assignee: true,
             taskEventList: {
                 orderBy: {
@@ -21,9 +22,10 @@ export const getTasks = async () => {
     return tasksDb.map((t)=> mapTaskToUI(t))
 }
 
-export const createTask = async (taskInput: TaskInput) => {
+export const createTask = async (taskInput: TaskInput, sessionUserId: string) => {
     const createdTaskDb = await prisma.task.create({
         include: {
+            createdBy: true,
             assignee: true,
             taskEventList: {
                 orderBy: {
@@ -32,6 +34,7 @@ export const createTask = async (taskInput: TaskInput) => {
             }
         },
         data: {
+            createdById: sessionUserId,
             ...(taskInput.title !== undefined && {
                 title: taskInput.title,
             }),
@@ -50,6 +53,7 @@ export const createTask = async (taskInput: TaskInput) => {
             },
         },
     });
+    console.log(createdTaskDb)
     return mapTaskToUI(createdTaskDb)
 };
 export const editTask = async (id: string, taskInput: TaskInput) => {
@@ -89,6 +93,7 @@ export const editTask = async (id: string, taskInput: TaskInput) => {
 
         return tx.task.update({
             include: {
+                createdBy: true,
                 assignee: true,
                 taskEventList: {
                     orderBy: {

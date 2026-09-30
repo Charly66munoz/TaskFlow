@@ -37,7 +37,8 @@ model User {
   role         Role    @default(member)
   passwordHash String?
 
-  assignedTasks          Task[]
+  creatorTasks           Task[]      @relation("TaskCreator")
+  assignedTasks          Task[]      @relation("TaskAssignee")
   actedTaskEvents        TaskEvent[] @relation("TaskEventActor") //los nombres deben coincidir ya que hay tres relaciones distintas entre estas dos entidades.
   fromAssigneeTaskEvents TaskEvent[] @relation("TaskEventFromAssignee")
   toAssigneeTaskEvents   TaskEvent[] @relation("TaskEventToAssignee")
@@ -47,9 +48,11 @@ model Task {
   taskId      String  @id @default(uuid()) @map("task_id") @db.Uuid
   title       String?
   description String
+  createdById String  @map("created_by_id") @db.Uuid
+  createdBy   User    @relation("TaskCreator", fields: [createdById], references: [userId])
 
   assigneeId String? @map("assignee_id") @db.Uuid
-  assignee   User?   @relation(fields: [assigneeId], references: [userId])
+  assignee   User?   @relation("TaskAssignee", fields: [assigneeId], references: [userId])
 
   status   Status    @default(toDo)
   priority Priority?

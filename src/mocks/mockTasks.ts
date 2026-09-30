@@ -1,32 +1,34 @@
 import type { Task } from "../types/entity/Task";
-import { users } from "./mockUsers";
-import { v4 as uuid } from "uuid";
+import { mockUsers } from "./mockUsers";
 
 const today = new Date();
 const deadline = new Date("2026-08-05");
 export const mockTasks: Task[] = [
     {
-        id: uuid(),
+        id: "11111112-1111-4111-8111-111111111110",
         title: "Estudiar",
         description: "Preparar examen integral de lengua y literatura griega",
-        assigneeTo: users[1],
+        createdBy: mockUsers[0],
+        assigneeTo: mockUsers[1],
         priority: 'high',
         status: 'toDo',
         createdAt: today,
         deadline: deadline,
     },
     {
-        id: uuid(),
+        id: "11111113-1111-4111-8111-111111111110",
         description: "Seleccionar persona resposable de envento tech",
+        createdBy: mockUsers[0],
         priority: 'medium',
         status: 'inProgress',
         createdAt: today,
         deadline: deadline,
     },
     {
-        id: uuid(),
+        id: "11111114-1111-4111-8111-111111111110",
         description: "Actualizar documentación del proyecto",
-        assigneeTo: users[0],
+        createdBy: mockUsers[1],
+        assigneeTo: mockUsers[0],
         priority: "low",
         status: "finished",
         createdAt: new Date("2026-07-10"),
@@ -34,10 +36,11 @@ export const mockTasks: Task[] = [
     },
 
     {
-        id: uuid(),
+        id: "11111115-1111-4111-8111-111111111110",
         title: "Front-end works" ,
         description: "Diseñar pantalla de Login",
-        assigneeTo: users[2],
+        createdBy: mockUsers[1],
+        assigneeTo: mockUsers[2],
         priority: "high",
         status: "inProgress",
         createdAt: new Date("2026-07-18"),
@@ -45,8 +48,9 @@ export const mockTasks: Task[] = [
     },
 
     {
-        id: uuid(),
+        id: "11111116-1111-4111-8111-111111111110",
         description: "Preparar reunión con el cliente",
+        createdBy: mockUsers[2],
         priority: "medium",
         status: "toDo",
         createdAt: new Date("2026-07-20"),
@@ -54,10 +58,11 @@ export const mockTasks: Task[] = [
     },
 
     {
-        id: uuid(),
+        id: "11111117-1111-4111-8111-111111111110",
         title: "Correcciones bugs",
         description: "Corregir errores reportados en producción",
-        assigneeTo: users[1],
+        createdBy: mockUsers[2],
+        assigneeTo: mockUsers[1],
         priority: "high",
         status: "finished",
         createdAt: new Date("2026-07-05"),
@@ -65,19 +70,21 @@ export const mockTasks: Task[] = [
     },
 
     {
-        id: uuid(),
+        id: "11111118-1111-4111-8111-111111111110",
         description: "Revisar Pull Request #18",
-        assigneeTo: users[0],
+        createdBy: mockUsers[2],
+        assigneeTo: mockUsers[0],
         priority: "medium",
         status: "toDo",
         createdAt: new Date("2026-07-21"),
     },
 
     {
-        id: uuid(),
+        id: "11111119-1111-4111-8111-111111111110",
         title: "Dashboard development"        ,
         description: "Optimizar rendimiento del Dashboard",
-        assigneeTo: users[2],
+        createdBy: mockUsers[0],
+        assigneeTo: mockUsers[2],
         priority: "high",
         status: "inProgress",
         createdAt: new Date("2026-07-15"),
