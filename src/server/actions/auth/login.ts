@@ -31,7 +31,7 @@ export async function login(state: FormStateLogin, formData: FormData) {
     await signIn("credentials", {
       email: validatedFields.data.email,
       password: validatedFields.data.password,
-      redirectTo: "/"
+      redirectTo: "/dashboard"
     })
   } catch (error) {
   if (error instanceof AuthError) {

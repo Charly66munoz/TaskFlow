@@ -3,8 +3,14 @@ import type { Prisma } from "../generated/prisma/client"
 import type { TaskInput } from "../types/entity/TaskInput"
 import { mapTaskToUI } from "./mapper/taskMapper"
 
-export const getTasks = async () => {
+export const getTasks = async (sessionUserId: string) => {
     const tasksDb = await prisma.task.findMany({
+        where: {
+            OR: [
+                { createdById: sessionUserId },
+                { assigneeId: sessionUserId }
+            ]
+        },
         include: {
             createdBy: true,
             assignee: true,
@@ -23,7 +29,8 @@ export const getTasks = async () => {
 }
 
 export const createTask = async (taskInput: TaskInput, sessionUserId: string) => {
-    const createdTaskDb = await prisma.task.create({
+        
+    const result = await prisma.task.create({
         include: {
             createdBy: true,
             assignee: true,
@@ -53,22 +60,45 @@ export const createTask = async (taskInput: TaskInput, sessionUserId: string) =>
             },
         },
     });
-    console.log(createdTaskDb)
-    return mapTaskToUI(createdTaskDb)
-};
-export const editTask = async (id: string, taskInput: TaskInput) => {
+
     
-    const editTaskDb = await prisma.$transaction(async (tx) => {
-        const previousTask = await tx.task.findUniqueOrThrow({
-            where: { taskId: id },
-            select: { assigneeId: true, status: true },
+
+    return {
+        success: true as const,
+        task: mapTaskToUI(result)
+    }  
+};
+export const editTask = async (id: string, taskInput: TaskInput, sessionUserId: string) => {
+    
+    const result = await prisma.$transaction(async (tx) => {
+        const previousTask = await tx.task.findFirst({
+            where: { 
+                taskId: id,
+                OR: [
+                    {createdById: sessionUserId},
+                    {assigneeId: sessionUserId}
+                ],
+             },
+            select: { assigneeId: true, status: true , createdById: true },
         });
+        if (!previousTask ) {
+            return {
+                success: false as const,
+                error: "No estás autorizado a editar esta tarea",
+            };
+        }else if(previousTask.createdById !== sessionUserId && taskInput.assigneeId !== previousTask.assigneeId){
+            return {
+                success: false as const,
+                error: "No estás autorizado a editar el personal asignado",
+            };
+        }
         //undefined no modificar
         //null borrar la asignación
         //string asignar este usuario
         const newAssigneeId = taskInput.assigneeId !== undefined
             ? taskInput.assigneeId
             : previousTask.assigneeId;
+
         const newStatus = taskInput.status ?? previousTask.status;
 
         // Solo aceptar objetos que Prisma pueda usar
@@ -91,7 +121,7 @@ export const editTask = async (id: string, taskInput: TaskInput) => {
             });
         }
 
-        return tx.task.update({
+        const updatedTask = await tx.task.update({
             include: {
                 createdBy: true,
                 assignee: true,
@@ -128,16 +158,39 @@ export const editTask = async (id: string, taskInput: TaskInput) => {
                 }),
             },
         });
+        return {
+            success: true as const,
+            task: updatedTask
+        }
     });
+    if (!result.success) {
+        return result
+    }
 
-    return mapTaskToUI(editTaskDb)
+    return {
+        success: true as const,
+        task: mapTaskToUI(result.task),
+    };
 };
 
-export const deleteTask = async (id: string) => {
-    await prisma.task.delete({
+export const deleteTask = async (id: string, sessionUserId: string) => {
+     const result = await prisma.task.deleteMany({
         where: {
-            taskId: id 
+        taskId: id,
+        createdById: sessionUserId,
         },
-    })
+    });
+
+    if (result.count === 0) {
+        return {
+        success: false,
+        error: "No estás autorizado a borrar esta tarea",
+        };
+    }
+
+    return {
+        success: true,
+        error: null,
+    };
 }
 

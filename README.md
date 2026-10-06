@@ -80,8 +80,8 @@ After technical desition of migrate to Next.js
 -✅ Sprint 0 — Pre-migration cleanup
 -✅ Sprint 1 — Migration to Next.js
 -✅ Sprint 2 — PostgreSQL + Prisma
--🚧 Sprint 3 — Real CRUD (mostly implemented, being reviewed/closed out)
--⬜ Sprint 4 — Authentication
+-✅ Sprint 3 — Real CRUD (mostly implemented, being reviewed/closed out)
+-✅ Sprint 4 — Authentication
 -⬜ Sprint 5 — Drag & drop
 -⬜ Sprint 6 — Metrics + AI summary
 -⬜ Sprint 7 — Deployment + polish

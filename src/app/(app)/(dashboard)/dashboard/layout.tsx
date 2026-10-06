@@ -2,6 +2,8 @@ import Sidebar from "@/components/layouts/Sidebar";
 import Header from "@/components/layouts/Header";
 import { getSession } from "@/server/actions/auth/getSession";
 import { redirect } from "next/navigation";
+import { FeedbackProvider } from "@/components/providers/FeedbackProvider";
+
 
 async function AppLayout({
     children,
@@ -36,7 +38,9 @@ async function AppLayout({
               <Sidebar />
             </aside>
             <main className="flex-1 min-h-0 overflow-hidden md:mb-0 sm:basis-3/3 p-4 ">
-              {children}
+              <FeedbackProvider>
+                {children}
+              </FeedbackProvider>
             </main>
           </div>
         </div>

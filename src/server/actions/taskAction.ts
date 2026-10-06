@@ -1,21 +1,71 @@
 "use server";
 
-import { createTask, deleteTask, editTask } from "@/service/taskService";
+import { createTask, deleteTask, editTask, getTasks } from "@/service/taskService";
 import type { TaskInput } from "@/types/entity/TaskInput";
 import { auth } from "../auth";
+import type { Task } from "@/types/entity/Task";
+
+
+export async function getTaskAction() {
+  const session = await checkSession()
+
+  if (!session.success) {
+    throw new Error('No se han podido obtener las tareas')
+  }
+  return getTasks(session.userId);
+}
 
 export async function createTaskAction(taskInput: TaskInput) {
+  const session = await checkSession()
+
+  if (!session.success) {
+    return session;
+  }
+  return createTask(taskInput, session.userId);
+}
+
+export async function editTaskAction(id: string, taskInput: TaskInput) {
+  const session = await checkSession()
+
+  if (!session.success) {
+    return session;
+  }
+  
+
+  return editTask(id, taskInput, session.userId);
+}
+
+export async function deleteTaskAction(id: string) {
+  const session = await checkSession()
+
+  if (!session.success ) {
+    return session
+  }
+  return deleteTask( id , session.userId);
+}
+
+type SessionResult =
+   |{
+      success: true;
+      userId: string;
+    }
+  | {
+      success: false;
+      error: string;
+};
+
+export const checkSession = async (): Promise<SessionResult> => {
   const session = await auth();
 
   if (!session?.user?.id) {
-    throw new Error("Unauthorized");
+    return {
+      success: false,
+      error: "No estás autenticado",
+    };
   }
-  return createTask(taskInput, session?.user?.id);
-}
-export async function editTaskAction(id: string, taskInput: TaskInput) {
-  return editTask( id, taskInput );
-}
-//implementar borrado logico mas adelante
-export async function deleteTaskAction(id: string) {
-  return deleteTask( id );
-}
+
+  return {
+    success: true,
+    userId: session.user.id,
+  };
+};

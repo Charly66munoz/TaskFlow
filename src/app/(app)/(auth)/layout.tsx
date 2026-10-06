@@ -9,7 +9,7 @@ async function AppLayout({
   const session = await getSession();
 
   if (session) {
-    redirect("/");
+    redirect("/dashboard");
   }
 
   return (

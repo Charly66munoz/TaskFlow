@@ -5,9 +5,10 @@ import { login } from "@/server/actions/auth/login";
 import Link from "next/link";
 import { useActionState } from "react";
 import { useSearchParams } from "next/navigation";
+import FeedbackMessage from "@/components/ui/feedback/FeedbackMessage";
 
 export default function LogIn() {
-  const [state, action, pending] = useActionState(login, undefined);
+  const [state, action, pending] = useActionState(login, undefined);  
 
   const searchParams  = useSearchParams();
   const reason = searchParams.get("reason");
@@ -18,21 +19,9 @@ export default function LogIn() {
           action={action}
           className="w-full max-w-md space-y-6 rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-lg"
         >
-      {reason && (
-        <div className=" text-center py-4 lg:px-4">
-          <div
-            className="p-2 bg-red-800 rounded-3xl items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex"
-            role="alert"
-          >
-            <span className="flex rounded-full bg-red-500 uppercase px-2 py-1 text-xs font-bold mr-3">
-              Error
-            </span>
-            <span className="font-semibold mr-2 text-left flex-auto">
-              Debe iniciar sesion primero
-            </span>
-          </div>
-        </div>
-      )}
+          {reason && (
+            <FeedbackMessage type="error" message="Debe iniciar session" />
+          )}
           <div className="space-y-2">
             <label
               htmlFor="email"

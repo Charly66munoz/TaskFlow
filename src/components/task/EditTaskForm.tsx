@@ -6,6 +6,7 @@ import type { User } from "@/types/entity/User";
 import type { TaskInput } from "@/types/entity/TaskInput";
 import {  editTaskAction } from "@/server/actions/taskAction";
 import LoadingSpinner from "../ui/LoadingSpinner";
+import { useFeedback } from "../providers/FeedbackProvider";
 
 interface CreateTaskFormProp {
   task: Task;
@@ -60,7 +61,7 @@ const EditTaskForm = ({
   });
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState<string | null>(null);
+  const {showError, showSuccess} = useFeedback()
 
   const isDescriptionEmpty = draft.description.trim() === "";
 
@@ -96,15 +97,21 @@ const EditTaskForm = ({
     };
 
     setIsSubmitting(true);
-    setSubmitError(null);
 
     try {
-      
-      const newTask = await editTaskAction(task.id , newTaskMapped);
-      editTask(task.id, newTask);
+      const result = await editTaskAction(task.id , newTaskMapped);
+      if (!result.success) {
+       showError(result.error ?? "No se pudo editar la tarea");
+       onClose();
+       return
+      }
+
+      showSuccess("Tarea editada correctamente")
+      editTask(task.id, result.task);
       onClose();
+      
     } catch {
-      setSubmitError("No se pudo editar la tarea. Intentá de nuevo.");
+      showError("No se pudo editar la tarea. Intentá de nuevo.");
     } finally {
       setIsSubmitting(false);
     }
@@ -198,15 +205,6 @@ const EditTaskForm = ({
             />
           </div>
 
-          {submitError && (
-            <p
-              className="text-red-400 text-xs"
-              role="alert"
-              aria-live="assertive"
-            >
-              {submitError}
-            </p>
-          )}
 
           <div className="flex justify-end gap-3 mt-2">
             <button
@@ -223,7 +221,7 @@ const EditTaskForm = ({
               className="px-4 py-2 rounded-full text-sm font-bold bg-purple-900 text-white hover:bg-purple-950 disabled:opacity-60 disabled:cursor-not-allowed flex items-center gap-2"
             >
               {isSubmitting && (
-                <LoadingSpinner size="sm" label="Creando tarea" />
+                <LoadingSpinner size="sm" label="Editando tarea" />
               )}
               {isSubmitting ? "Editando..." : "Editar tarea"}
             </button>

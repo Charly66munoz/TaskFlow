@@ -6,6 +6,7 @@ import type { User } from "@/types/entity/User";
 import type { TaskInput } from "@/types/entity/TaskInput";
 import { createTaskAction } from "@/server/actions/taskAction";
 import LoadingSpinner from "../ui/LoadingSpinner";
+import { useFeedback } from "../providers/FeedbackProvider";
 
 interface CreateTaskFormProp {
   addTask: (newTask: Task) => void;
@@ -48,7 +49,8 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
   const [draft, setDraft] = useState<TaskFormDraft>(initialDraft);
   const [submitAttempted, setSubmitAttempted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitError, setSubmitError] = useState<string | null>(null);
+  const {showError, showSuccess} = useFeedback()
+  
 
   const isDescriptionEmpty = draft.description.trim() === "";
 
@@ -84,14 +86,22 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
     };
 
     setIsSubmitting(true);
-    setSubmitError(null);
 
     try {
       const newTask = await createTaskAction(newTaskMapped);
-      addTask(newTask);
+      
+      if (!newTask.success) {
+        showError(newTask?.error ?? "No se pudo editar la tarea");
+        onClose();
+        return;
+      }
+
+      showSuccess("Tarea creada correctamente");
+
+      addTask(newTask.task);
       onClose();
     } catch {
-      setSubmitError("No se pudo crear la tarea. Intentá de nuevo.");
+      showError("No se pudo crear la tarea. Intentá de nuevo.");
     } finally {
       setIsSubmitting(false);
     }
@@ -184,12 +194,6 @@ const CreateTaskForm = ({ addTask, onClose, dbUsers }: CreateTaskFormProp) => {
               className="rounded-lg bg-purple-400/10 px-3 py-2 text-sm "
             />
           </div>
-
-          {submitError && (
-            <p className="text-red-400 text-xs" role="alert" aria-live="assertive">
-              {submitError}
-            </p>
-          )}
 
           <div className="flex justify-end gap-3 mt-2">
             <button

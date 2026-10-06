@@ -15,7 +15,6 @@ interface propDashboard{
 
 export const Dashboard = ({dbTasks, dbUsers}: propDashboard) => {
   const [tasks, setTasks] = useState<Task[]>(dbTasks);
-  // const [tasks, setTasks] = useState<Task[]>([])
 
   const tasksStatus = {
     toDo: tasks.filter((task) => task.status === "toDo"),
