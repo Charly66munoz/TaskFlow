@@ -1,14 +1,18 @@
+import type { Status } from "@/generated/prisma/enums";
 import KanbanColumn from "./KanbanColumn";
 import type { Task, taskStatus } from "@/types/entity/Task";
 import type { User } from "@/types/entity/User";
+import { updateTaskStatusAction } from "@/server/actions/taskAction";
+import { useFeedback } from "../providers/FeedbackProvider";
 
 interface kanbanBoardProps {
   tasks: Task[];
   // setTask es elimando ya que componente solo debera tener acceso a eliminar y modificar tareas
   taskStatus: taskStatus;
   dbUsers: User[];
-  deleteTask: (id: string) => void;
-  editTask: (id: string, task: Task) => void;
+  deleteTask: (idTask: string) => void;
+  editTask: (idTask: string, task: Task) => void;
+  changeStatus: (idTask: string, newStatus: Status) => void;
 }
 
 
@@ -19,7 +23,37 @@ function KanbanBoard({
   dbUsers,
   deleteTask,
   editTask,
+  changeStatus,
 }: kanbanBoardProps) {
+  const {showError, showSuccess} = useFeedback()
+  const handleOptimisticUpdateTask = async (idTask: string, newStatus: Status) => {
+
+    const task = tasks.find((t)=> t.id === idTask)
+
+    if (!task) {
+      showError("Tarea no encontrada")
+      return
+    }
+
+    const previousStatus = task.status
+    changeStatus(idTask, newStatus);
+    
+    try {
+      const result = await updateTaskStatusAction(idTask, newStatus);
+      if (!result.success) {
+        changeStatus(idTask, previousStatus);
+        showError(result.error ?? "No se pudo editar la tarea");
+        return;
+      }
+      if (!result.changed) {
+        return;
+      }
+
+    } catch {
+      changeStatus(idTask, previousStatus);
+      showError("No se pudo cambiar el estado de la tarea. Intentá de nuevo.");
+    }
+  };
   return (
     <>
       <div className="hidden md:flex h-full  mr-5 mt-5 text-center  text-slate-300">

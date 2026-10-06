@@ -44,7 +44,7 @@ export function Navbar({ itShow }: navbarProp) {
           >
             Open TaskFlow
           </Link>
-          <p className="text-[9px] text-center text-purple-600">
+          <p className="text-[9px] ml-5 text-center text-purple-600 hidden md:flex">
             No tienes cuenta?
           </p>
           <Link

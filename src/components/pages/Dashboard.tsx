@@ -6,6 +6,7 @@ import Greeting from "../dashboard/Greeting";
 import KanbanBoard from "../dashboard/KanbanBoard";
 import type { Task } from "@/types/entity/Task";
 import type { User } from "@/types/entity/User";
+import type { Status } from "@/generated/prisma/enums";
 
 interface propDashboard{
   dbTasks: Task[];
@@ -23,21 +24,24 @@ export const Dashboard = ({dbTasks, dbUsers}: propDashboard) => {
   };
 
   const addTask = (newTask: Task) => {
-    setTasks((tasks) => [...tasks, newTask]);
+    setTasks((prev) => [...prev, newTask]);
   };
-  const deleteTask = (id: string) => {
-    const newTasks = tasks.filter((t)=>t.id !== id) 
-    setTasks(newTasks);
+  const deleteTask = (idTask: string) => {
+    setTasks((prev) => prev.filter((t) => t.id !== idTask));
   };
   const editTask = (id: string, taskModified: Task) => {
-    console.log(`Este es el id ${id}`);
-    const editedTask = tasks.map((t) => {
-      if (t.id !== id) return t;
-      return taskModified;
-    });
-
-    setTasks(editedTask);
+    setTasks((prev) =>
+      prev.map((task) => (task.id === id ? taskModified : task)),
+    );
   };
+  const changeStatus = (idTask: string , newStatus: Status)=> {
+    setTasks((prev) =>
+      prev.map((t)=>
+        t.id === idTask ? { ...t, status: newStatus }
+        : t
+      )
+    )
+  }
 
   return (
     <>
@@ -52,6 +56,7 @@ export const Dashboard = ({dbTasks, dbUsers}: propDashboard) => {
             dbUsers={dbUsers}
             deleteTask={deleteTask}
             editTask={editTask}
+            changeStatus={changeStatus}
           />
           <AddTaskButton addTask={addTask} dbUsers={dbUsers} />
         </div>

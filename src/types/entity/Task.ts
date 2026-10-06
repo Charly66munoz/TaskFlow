@@ -20,3 +20,19 @@ export interface taskStatus{
   inProgress: Task[],
   finished: Task[], 
 }
+
+
+export type UpdateTaskStatusResult =
+  | {
+      success: false;
+      error: string;
+    }
+  | {
+      success: true;
+      changed: false;
+    }
+  | {
+      success: true;
+      changed: true;
+      task: Task;
+    };

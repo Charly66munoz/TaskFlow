@@ -1,5 +1,5 @@
 import { prisma } from "../db/client"
-import type { Prisma } from "../generated/prisma/client"
+import type { Prisma, Status } from "../generated/prisma/client"
 import type { TaskInput } from "../types/entity/TaskInput"
 import { mapTaskToUI } from "./mapper/taskMapper"
 
@@ -68,12 +68,13 @@ export const createTask = async (taskInput: TaskInput, sessionUserId: string) =>
         task: mapTaskToUI(result)
     }  
 };
-export const editTask = async (id: string, taskInput: TaskInput, sessionUserId: string) => {
+
+export const editTask = async (taskId: string, taskInput: TaskInput, sessionUserId: string) => {
     
     const result = await prisma.$transaction(async (tx) => {
         const previousTask = await tx.task.findFirst({
             where: { 
-                taskId: id,
+                taskId,
                 OR: [
                     {createdById: sessionUserId},
                     {assigneeId: sessionUserId}
@@ -86,7 +87,14 @@ export const editTask = async (id: string, taskInput: TaskInput, sessionUserId: 
                 success: false as const,
                 error: "No estás autorizado a editar esta tarea",
             };
-        }else if(previousTask.createdById !== sessionUserId && taskInput.assigneeId !== previousTask.assigneeId){
+        }
+        if (previousTask.createdById !== sessionUserId && previousTask.assigneeId !== sessionUserId) {
+            return {
+                success: false as const,
+                error: "No estás autorizado a cambiar el estado de la tarea",
+            };
+        }
+        if(previousTask.createdById !== sessionUserId && taskInput.assigneeId !== previousTask.assigneeId){
             return {
                 success: false as const,
                 error: "No estás autorizado a editar el personal asignado",
@@ -132,7 +140,7 @@ export const editTask = async (id: string, taskInput: TaskInput, sessionUserId: 
                 }
             },
             where: {
-                taskId: id
+                taskId,
             },
             data: {
                 ...(taskInput.title !== undefined && {
@@ -193,4 +201,62 @@ export const deleteTask = async (id: string, sessionUserId: string) => {
         error: null,
     };
 }
+
+export const updateTaskStatus = async (
+  taskId: string,
+  newStatus: Status,
+  sessionUserId: string
+) => {
+  
+    return  prisma.$transaction(async (tx) => {
+      const previousTask = await tx.task.findUnique({
+            where: { 
+                taskId,
+             },
+            select: { assigneeId: true, status: true , createdById: true },
+        });
+        if (!previousTask) {
+            return {
+                success: false as const,
+                error: "La tarea no existe",
+            };
+        }
+
+        if (previousTask.createdById !== sessionUserId && previousTask.assigneeId !== sessionUserId) {
+            return {
+                success: false as const,
+                error: "No estás autorizado a cambiar el estado de la tarea",
+            };
+        }
+
+        if (newStatus === previousTask.status) {
+            return {
+                success: true as const,
+                changed: false,
+            };
+        }
+        
+        await tx.task.update({
+            where: {
+                taskId,
+            },
+            data: {
+                status: newStatus,
+                taskEventList: {
+                create: {
+                    type: "STATUS_CHANGED",
+                    fromStatus: previousTask.status,
+                    toStatus: newStatus,
+                },
+                },
+            },
+        });
+        return {
+            success: true as const,
+            changed: true,
+        }
+    });
+};
+
+
 
